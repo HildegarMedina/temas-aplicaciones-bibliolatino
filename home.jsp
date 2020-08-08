@@ -1,3 +1,16 @@
+<div class="col-md-12">
+	<div id="linksBar">
+		<div class="container">
+		 <ul>
+			<li><a href="/community-list" target="_self"><img src="<%= request.getContextPath() %>/image/icon-collections.svg" alt=""><span>Navegar por Colecciones</span></a></li>
+			<li><a href="/browse?type=author" target="_self"><img src="<%= request.getContextPath() %>/image/icon-authors.svg" alt=""><span>Navegar por Autores</span></a></li>
+			<li><a href="/browse?type=title" target="_self"><img src="<%= request.getContextPath() %>/image/icon-titles.svg" alt=""><span>Navegar por Titulos</span></a></li>
+			<li><a href="/browse?type=dateissued" target="_self"><img src="<%= request.getContextPath() %>/image/icon-dates.svg" alt=""><span>Navegar por Fechas</span></a></li>
+			<li><a href="/browse?type=subject" target="_self"><img src="<%= request.getContextPath() %>/image/icon-subjects.svg" alt=""><span>Navegar por Materias</span></a></li>
+		 </ul>
+		 </div>
+	  </div>
+</div>
 <%--
 
     The contents of this file are subject to the license and copyright
@@ -76,95 +89,46 @@
 	
 
 <div class="row">
-<%
-if (submissions != null && submissions.count() > 0)
-{
-%>
-        <div class="col-md-8">
-        <div class="panel panel-primary">        
-        <div id="recent-submissions-carousel" class="panel-heading carousel slide">
-          <h3><fmt:message key="jsp.collection-home.recentsub"/>
-              <%
-    if(feedEnabled)
-    {
-	    	String[] fmts = feedData.substring(feedData.indexOf(':')+1).split(",");
-	    	String icon = null;
-	    	int width = 0;
-	    	for (int j = 0; j < fmts.length; j++)
-	    	{
-	    		if ("rss_1.0".equals(fmts[j]))
-	    		{
-	    		   icon = "rss1.gif";
-	    		   width = 80;
-	    		}
-	    		else if ("rss_2.0".equals(fmts[j]))
-	    		{
-	    		   icon = "rss2.gif";
-	    		   width = 80;
-	    		}
-	    		else
-	    	    {
-	    	       icon = "rss.gif";
-	    	       width = 36;
-	    	    }
-	%>
-	    <a href="<%= request.getContextPath() %>/feed/<%= fmts[j] %>/site"><img src="<%= request.getContextPath() %>/image/<%= icon %>" alt="RSS Feed" width="<%= width %>" height="15" style="margin: 3px 0 3px" /></a>
-	<%
-	    	}
-	    }
-	%>
-          </h3>
-          
-		  <!-- Wrapper for slides -->
-		  <div class="carousel-inner">
-		    <%
-		    boolean first = true;
-		    for (Item item : submissions.getRecentSubmissions())
-		    {
-		        String displayTitle = itemService.getMetadataFirstValue(item, "dc", "title", null, Item.ANY);
-		        if (displayTitle == null)
-		        {
-		        	displayTitle = "Untitled";
-		        }
-		        String displayAbstract = itemService.getMetadataFirstValue(item, "dc", "description", "abstract", Item.ANY);
-		        if (displayAbstract == null)
-		        {
-		            displayAbstract = "";
-		        }
-		%>
-		    <div style="padding-bottom: 50px; min-height: 200px;" class="item <%= first?"active":""%>">
-		      <div style="padding-left: 80px; padding-right: 80px; display: inline-block;"><%= Utils.addEntities(StringUtils.abbreviate(displayTitle, 400)) %> 
-		      	<a href="<%= request.getContextPath() %>/handle/<%=item.getHandle() %>" class="btn btn-success">See</a>
-                        <p><%= Utils.addEntities(StringUtils.abbreviate(displayAbstract, 500)) %></p>
-		      </div>
-		    </div>
-		<%
-				first = false;
-		     }
-		%>
+
+	<div class="container">
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+			  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			  <li data-target="#myCarousel" data-slide-to="1"></li>
+			  <li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>
+		  
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner">
+			  <div class="item active">
+				<img src="https://repositorio.konradlorenz.edu.co/retrieve/cc522715-a581-4a6e-a344-c70b5b23c40b/miniatura%20para%20el%20aula_modificada.jpg" alt="Los Angeles" style="margin: 0 auto;">
+			  </div>
+		  
+			  <div class="item">
+				<img src="https://repositorio.konradlorenz.edu.co/retrieve/cc522715-a581-4a6e-a344-c70b5b23c40b/miniatura%20para%20el%20aula_modificada.jpg" alt="Chicago" style="margin: 0 auto;">
+			  </div>
+		  
+			  <div class="item">
+				<img src="https://repositorio.konradlorenz.edu.co/retrieve/cc522715-a581-4a6e-a344-c70b5b23c40b/miniatura%20para%20el%20aula_modificada.jpg" alt="New York" style="margin: 0 auto;">
+			  </div>
+			</div>
+		  
+			<!-- Left and right controls -->
+			<!-- <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+			  <span class="glyphicon glyphicon-chevron-left"></span>
+			  <span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#myCarousel" data-slide="next">
+			  <span class="glyphicon glyphicon-chevron-right"></span>
+			  <span class="sr-only">Next</span>
+			</a> -->
 		  </div>
-
-		  <!-- Controls -->
-		  <a class="left carousel-control" href="#recent-submissions-carousel" data-slide="prev">
-		    <span class="icon-prev"></span>
-		  </a>
-		  <a class="right carousel-control" href="#recent-submissions-carousel" data-slide="next">
-		    <span class="icon-next"></span>
-		  </a>
-
-          <ol class="carousel-indicators">
-		    <li data-target="#recent-submissions-carousel" data-slide-to="0" class="active"></li>
-		    <% for (int i = 1; i < submissions.count(); i++){ %>
-		    <li data-target="#recent-submissions-carousel" data-slide-to="<%= i %>"></li>
-		    <% } %>
-	      </ol>
-     </div></div></div>
-<%
-}
-%>
+	</div>
 
 </div>
 <div class="container row">
+	
 <%
 if (communities != null && communities.size() != 0)
 {
