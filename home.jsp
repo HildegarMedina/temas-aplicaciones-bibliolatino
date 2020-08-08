@@ -127,7 +127,7 @@
 	</div>
 
 </div>
-<div class="container row">
+<div class="container row card-group-custom">
 	
 <%
 if (communities != null && communities.size() != 0)

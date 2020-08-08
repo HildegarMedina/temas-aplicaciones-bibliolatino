@@ -344,6 +344,14 @@
 /*-------CUSTOM CSS-------*/
 /*------------------------*/
 
+a {
+    color: #000;
+}
+.badge {
+    padding: 3px 7px 0px 7px;
+    background-color: #000;
+}
+
 /*------Header-----*/
 .header-top {
     background: #f3f3f3;
@@ -478,4 +486,52 @@ main#content::before {
 }
 #\:0\.targetLanguage {
     position: relative;
+}
+.list-group-item.row {
+    width: 100%;
+}
+.panel {
+    background: transparent;
+}
+.card-group-custom {
+    margin-top: 20px;
+}
+.card-group-custom h3 {
+    font-weight: bold;
+    font-size: 2.8rem;
+}
+.card-group-custom p {
+    font-size: 1.5rem;
+}
+
+/*------Footer------*/
+.rrss {
+    background: #1f1f1f;
+}
+.rrss ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: center;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 0;
+}
+.rrss ul img {
+    width: 40px;
+}
+.rrss a {
+    display: block;
+    margin: 0 5px;
+}
+.content-footer {
+    background: #676767;
+    color: #fff;
+    padding: 10px;
+}
+.content-footer p {
+    margin-bottom: 0;
+}
+#designedby a {
+    color: #fff;
 }
