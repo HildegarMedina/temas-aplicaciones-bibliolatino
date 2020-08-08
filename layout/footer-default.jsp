@@ -43,12 +43,12 @@
                 <div class="container">
                     <ul>
                         <li>Síganos en</li>
-                        <li><a target="blank" href="https://www.facebook.com/u.konradlorenz"><img src="/image/icon-facebook.png" alt=""></a></li>
-                        <li><a target="blank" href="https://twitter.com/uKonradLorenz"><img src="/image/icon-twitter.png" alt=""></a></li>
-                        <li><a target="blank" href="https://plus.google.com/+ukonradlorenz"><img src="/image/icon-googleplus.png" alt=""></a></li>
-                        <li><a target="blank" href="https://www.youtube.com/user/ukonradlorenz?sub_confirmation=1"><img src="/image/icon-youtube.png" alt=""></a></li>
-                        <li><a target="blank" href="https://www.pinterest.com/ukonradlorenz"><img src="/image/icon-pinterest.png" alt=""></a></li>
-                        <li><a target="blank" href="https://ukonradlorenz.tumblr.com"><img src="/image/icon-tumblr.png" alt=""></a></li>
+                        <li><a target="blank" href="https://www.facebook.com/u.konradlorenz"><img src="<%= request.getContextPath() %>/image/icon-facebook.png" alt=""></a></li>
+                        <li><a target="blank" href="https://twitter.com/uKonradLorenz"><img src="<%= request.getContextPath() %>/image/icon-twitter.png" alt=""></a></li>
+                        <li><a target="blank" href="https://plus.google.com/+ukonradlorenz"><img src="<%= request.getContextPath() %>/image/icon-googleplus.png" alt=""></a></li>
+                        <li><a target="blank" href="https://www.youtube.com/user/ukonradlorenz?sub_confirmation=1"><img src="<%= request.getContextPath() %>/image/icon-youtube.png" alt=""></a></li>
+                        <li><a target="blank" href="https://www.pinterest.com/ukonradlorenz"><img src="<%= request.getContextPath() %>/image/icon-pinterest.png" alt=""></a></li>
+                        <li><a target="blank" href="https://ukonradlorenz.tumblr.com"><img src="<%= request.getContextPath() %>/image/icon-tumblr.png" alt=""></a></li>
                         <!--<li><a target="blank" href="https://www.konradlorenz.edu.co/es/noticias/noticias-generales-de-la-institucion.html?format=feed&type=atom"><img src="/konradlorenz/images/icon-rss.png" alt=""></a></li>-->
                   </ul>
                   </div>
