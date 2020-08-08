@@ -406,6 +406,8 @@
 }
 .header-bottom {
     background: #676767;
+    position: relative;
+    z-index: 2;
 }
 #form-home {
     display: block;
@@ -436,9 +438,44 @@
 
 /*-------Content------*/
 main#content {
+    position: relative;
     background-image: url("http://aplicaciones.bibliolatino.com/image/home-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+}
+main#content::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: rgba(255, 255, 255, 0.5);
+}
+.breadcrumb.btn-success {
+    position: relative;
+    background-image: none;
+    background: #af1c32;
+    padding: 6px 10px 3px 10px;
+}
+#linksBar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+    margin-bottom: 30px;
+}
+#linksBar ul li a {
+    display: flex;
+    flex-direction: column;
+    color: #000;
+}
+#linksBar ul li img {
+    width: 55px;
+    margin: auto;
+}
+#\:0\.targetLanguage {
+    position: relative;
 }
