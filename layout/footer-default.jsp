@@ -37,19 +37,42 @@
 %>
 </div>
 </main>
-            <%-- Page footer --%>
-             <footer class="navbar navbar-inverse navbar-bottom">
-             <div id="designedby" class="container text-muted">
-             <fmt:message key="jsp.layout.footer-default.theme-by"/> <a href="http://www.cineca.it"><img
+        <%-- Page footer --%>
+        <footer class="navbar navbar-inverse navbar-bottom">
+            <div class="rrss">
+                <div class="container">
+                    <ul>
+                        <li>Síganos en</li>
+                        <li><a target="blank" href="https://www.facebook.com/u.konradlorenz"><img src="/image/icon-facebook.png" alt=""></a></li>
+                        <li><a target="blank" href="https://twitter.com/uKonradLorenz"><img src="/image/icon-twitter.png" alt=""></a></li>
+                        <li><a target="blank" href="https://plus.google.com/+ukonradlorenz"><img src="/image/icon-googleplus.png" alt=""></a></li>
+                        <li><a target="blank" href="https://www.youtube.com/user/ukonradlorenz?sub_confirmation=1"><img src="/image/icon-youtube.png" alt=""></a></li>
+                        <li><a target="blank" href="https://www.pinterest.com/ukonradlorenz"><img src="/image/icon-pinterest.png" alt=""></a></li>
+                        <li><a target="blank" href="https://ukonradlorenz.tumblr.com"><img src="/image/icon-tumblr.png" alt=""></a></li>
+                        <!--<li><a target="blank" href="https://www.konradlorenz.edu.co/es/noticias/noticias-generales-de-la-institucion.html?format=feed&type=atom"><img src="/konradlorenz/images/icon-rss.png" alt=""></a></li>-->
+                  </ul>
+                  </div>
+            </div>
+            <div class="content-footer">
+                <div class="container">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, odit ipsum quas molestiae iure iste sapiente velit ratione odio 
+                        voluptatibus sunt nostrum, aliquid hic praesentium, culpa voluptatum modi nemo iusto laudantium. Nihil deserunt optio, aliquid 
+                        facilis alias expedita ipsum animi voluptate blanditiis, quas quisquam quo fugit nulla temporibus ea suscipit voluptates dolores 
+                        saepe excepturi consequatur  u quo minsci nemo cupiditate, voluptatibus beatae. Optio officia, illo ipsa adipisci natus doloremque et 
+                        vitae provident animi aliquid, voluptates eum ad. Moli.</p>
+                </div>
+            </div>
+            <div id="designedby" class="container text-muted">
+            <fmt:message key="jsp.layout.footer-default.theme-by"/> <a href="http://www.cineca.it"><img
                                     src="<%= request.getContextPath() %>/image/logo-cineca-small.png"
                                     alt="Logo CINECA" /></a>
-			<div id="footer_feedback" class="pull-right">                                    
+            <div id="footer_feedback" class="pull-right">                                    
                                 <p class="text-muted"><fmt:message key="jsp.layout.footer-default.text"/>&nbsp;-
                                 <a target="_blank" href="<%= request.getContextPath() %>/feedback"><fmt:message key="jsp.layout.footer-default.feedback"/></a>
                                 <a href="<%= request.getContextPath() %>/htmlmap"></a></p>
                                 </div>
-			</div>
-    </footer>
+            </div>
+        </footer>
 	<center>
 	<!-- Default Statcounter code for Repositorio Utelesup
 https://repositorio.utelesup.edu.pe -->
