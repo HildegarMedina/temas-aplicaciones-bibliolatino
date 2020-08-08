@@ -199,12 +199,15 @@
    </div>
    </nav>
       </div>
+    </div>
 
   <div class="header-middle">
     <div class="container">
-      <img height="60" src="<%= request.getContextPath() %>/image/logo-header.png" alt="Header logo" />
-      <img height="60" src="<%= request.getContextPath() %>/image/logo-library.png" alt="Library logo" />
-      <h2>Repositorio Digital</h2>
+      <div class="between">
+        <img height="60" src="<%= request.getContextPath() %>/image/logo-header.png" alt="Header logo" />
+        <img height="60" src="<%= request.getContextPath() %>/image/logo-library.png" alt="Library logo" />
+        <h2>Repositorio Digital</h2>
+      </div>
     </div>
   </div>
 
