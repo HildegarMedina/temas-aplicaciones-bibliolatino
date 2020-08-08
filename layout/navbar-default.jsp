@@ -89,7 +89,7 @@
            <span class="icon-bar"></span>
            <span class="icon-bar"></span>
          </button>
-         <a class="navbar-brand" href="<%= request.getContextPath() %>/"><img height="25" src="<%= request.getContextPath() %>/image/dspace-logo-only.png" alt="DSpace logo" /></a>
+         <!-- <a class="navbar-brand" href="<%= request.getContextPath() %>/"><img height="25" src="<%= request.getContextPath() %>/image/dspace-logo-only.png" alt="DSpace logo" /></a> -->
        </div>
        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
          <ul class="nav navbar-nav">
@@ -192,12 +192,24 @@
            </li>
           </ul>
           
-	<%-- Search Box --%>
-	<form method="get" action="<%= request.getContextPath() %>/simple-search" class="navbar-form navbar-right">
+	</div>
+  </nav>
+
+  <div class="header-middle">
+    <img height="60" src="<%= request.getContextPath() %>/image/logo-header.png" alt="Header logo" />
+    <img height="60" src="<%= request.getContextPath() %>/image/logo-library.png" alt="Library logo" />
+    <h2>Repositorio Digital</h2>
+  </div>
+
+</div>
+
+<div class="container">
+  <%-- Search Box --%>
+	<form method="get" action="<%= request.getContextPath() %>/simple-search" class="navbar-form navbar-right" id="form-home">
 	    <div class="form-group">
           <input type="text" class="form-control" placeholder="<fmt:message key="jsp.layout.navbar-default.search"/>" name="query" id="tequery" size="25"/>
         </div>
-        <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span></button>
+        <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span> Buscar</button>
 <%--               <br/><a href="<%= request.getContextPath() %>/advanced-search"><fmt:message key="jsp.layout.navbar-default.advanced"/></a>
 <%
 			if (ConfigurationManager.getBooleanProperty("webui.controlledvocabulary.enable"))
@@ -207,5 +219,5 @@
 <%
             }
 %> --%>
-	</form></div>
-    </nav>
+	</form>
+</div>
