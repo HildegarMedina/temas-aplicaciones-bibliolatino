@@ -91,114 +91,121 @@
          </button>
          <!-- <a class="navbar-brand" href="<%= request.getContextPath() %>/"><img height="25" src="<%= request.getContextPath() %>/image/dspace-logo-only.png" alt="DSpace logo" /></a> -->
        </div>
-       <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-         <ul class="nav navbar-nav">
-           <li class="<%= currentPage.endsWith("/home.jsp")? "active" : "" %>"><a href="<%= request.getContextPath() %>/"><span class="glyphicon glyphicon-home"></span> <fmt:message key="jsp.layout.navbar-default.home"/></a></li>
-                
-           <li class="dropdown">
-             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><fmt:message key="jsp.layout.navbar-default.browse"/> <b class="caret"></b></a>
-             <ul class="dropdown-menu">
-               <li><a href="<%= request.getContextPath() %>/community-list"><fmt:message key="jsp.layout.navbar-default.communities-collections"/></a></li>
-				<li class="divider"></li>
-        <li class="dropdown-header"><fmt:message key="jsp.layout.navbar-default.browseitemsby"/></li>
-				<%-- Insert the dynamic browse indices here --%>
-				
-				<%
-					for (int i = 0; i < bis.length; i++)
-					{
-						BrowseIndex bix = bis[i];
-						String key = "browse.menu." + bix.getName();
-					%>
-				      			<li><a href="<%= request.getContextPath() %>/browse?type=<%= bix.getName() %>"><fmt:message key="<%= key %>"/></a></li>
-					<%	
-					}
-				%>
-				    
-				<%-- End of dynamic browse indices --%>
+      </div>
+    <div class="header-top">
+      <div class="container">
 
-            </ul>
-          </li>
-          <li class="<%= ( currentPage.endsWith( "/help" ) ? "active" : "" ) %>"><dspace:popup page="<%= LocaleSupport.getLocalizedMessage(pageContext, \"help.index\") %>"><fmt:message key="jsp.layout.navbar-default.help"/></dspace:popup></li>
-       </ul>
-
- <% if (supportedLocales != null && supportedLocales.length > 1)
-     {
- %>
-    <div class="nav navbar-nav navbar-right">
-	 <ul class="nav navbar-nav navbar-right">
-      <li class="dropdown">
-       <a href="#" class="dropdown-toggle" data-toggle="dropdown"><fmt:message key="jsp.layout.navbar-default.language"/><b class="caret"></b></a>
-        <ul class="dropdown-menu">
- <%
-    for (int i = supportedLocales.length-1; i >= 0; i--)
-     {
- %>
-      <li>
-        <a onclick="javascript:document.repost.locale.value='<%=supportedLocales[i].toString()%>';
-                  document.repost.submit();" href="<%= currentPage %>?locale=<%=supportedLocales[i].toString()%>">
-         <%= supportedLocales[i].getDisplayLanguage(supportedLocales[i])%>
-       </a>
-      </li>
- <%
-     }
- %>
-     </ul>
-    </li>
-    </ul>
-  </div>
- <%
-   }
- %>
- 
-       <div class="nav navbar-nav navbar-right">
-		<ul class="nav navbar-nav navbar-right">
-         <li class="dropdown">
+        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+          <ul class="nav navbar-nav">
+            <li class="<%= currentPage.endsWith("/home.jsp")? "active" : "" %>"><a href="<%= request.getContextPath() %>/"><span class="glyphicon glyphicon-home"></span> <fmt:message key="jsp.layout.navbar-default.home"/></a></li>
+                 
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><fmt:message key="jsp.layout.navbar-default.browse"/> <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="<%= request.getContextPath() %>/community-list"><fmt:message key="jsp.layout.navbar-default.communities-collections"/></a></li>
+         <li class="divider"></li>
+         <li class="dropdown-header"><fmt:message key="jsp.layout.navbar-default.browseitemsby"/></li>
+         <%-- Insert the dynamic browse indices here --%>
+         
          <%
-    if (user != null)
-    {
-		%>
-		<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> <fmt:message key="jsp.layout.navbar-default.loggedin">
-		      <fmt:param><%= StringUtils.abbreviate(navbarEmail, 20) %></fmt:param>
-		  </fmt:message> <b class="caret"></b></a>
-		<%
-    } else {
-		%>
-             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> <fmt:message key="jsp.layout.navbar-default.sign"/> <b class="caret"></b></a>
-	<% } %>             
-             <ul class="dropdown-menu">
-               <li><a href="<%= request.getContextPath() %>/mydspace"><fmt:message key="jsp.layout.navbar-default.users"/></a></li>
-               <li><a href="<%= request.getContextPath() %>/subscribe"><fmt:message key="jsp.layout.navbar-default.receive"/></a></li>
-               <li><a href="<%= request.getContextPath() %>/profile"><fmt:message key="jsp.layout.navbar-default.edit"/></a></li>
-
-		<%
-                if (isAdmin || isCommunityAdmin || isCollectionAdmin) {
-                %>
-			   <li class="divider"></li>
-                           <% if (isAdmin) {%>
-                    
-                                <li><a href="<%= request.getContextPath()%>/dspace-admin">
-                           <% } else if (isCommunityAdmin || isCollectionAdmin) {%>
-                        
-                                <li><a href="<%= request.getContextPath()%>/tools">
-                <% } %>
-                <fmt:message key="jsp.administer"/></a></li>
-                <%
-                    }
-		  if (user != null) {
-		%>
-		<li><a href="<%= request.getContextPath() %>/logout"><span class="glyphicon glyphicon-log-out"></span> <fmt:message key="jsp.layout.navbar-default.logout"/></a></li>
-		<% } %>
+           for (int i = 0; i < bis.length; i++)
+           {
+             BrowseIndex bix = bis[i];
+             String key = "browse.menu." + bix.getName();
+           %>
+                     <li><a href="<%= request.getContextPath() %>/browse?type=<%= bix.getName() %>"><fmt:message key="<%= key %>"/></a></li>
+           <%	
+           }
+         %>
+             
+         <%-- End of dynamic browse indices --%>
+ 
              </ul>
            </li>
-          </ul>
-          
-	</div>
-  </nav>
+           <li class="<%= ( currentPage.endsWith( "/help" ) ? "active" : "" ) %>"><dspace:popup page="<%= LocaleSupport.getLocalizedMessage(pageContext, \"help.index\") %>"><fmt:message key="jsp.layout.navbar-default.help"/></dspace:popup></li>
+        </ul>
+ 
+  <% if (supportedLocales != null && supportedLocales.length > 1)
+      {
+  %>
+     <div class="nav navbar-nav navbar-right">
+    <ul class="nav navbar-nav navbar-right">
+       <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><fmt:message key="jsp.layout.navbar-default.language"/><b class="caret"></b></a>
+         <ul class="dropdown-menu">
+  <%
+     for (int i = supportedLocales.length-1; i >= 0; i--)
+      {
+  %>
+       <li>
+         <a onclick="javascript:document.repost.locale.value='<%=supportedLocales[i].toString()%>';
+                   document.repost.submit();" href="<%= currentPage %>?locale=<%=supportedLocales[i].toString()%>">
+          <%= supportedLocales[i].getDisplayLanguage(supportedLocales[i])%>
+        </a>
+       </li>
+  <%
+      }
+  %>
+      </ul>
+     </li>
+     </ul>
+   </div>
+  <%
+    }
+  %>
+  
+        <div class="nav navbar-nav navbar-right">
+     <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+          <%
+     if (user != null)
+     {
+     %>
+     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> <fmt:message key="jsp.layout.navbar-default.loggedin">
+           <fmt:param><%= StringUtils.abbreviate(navbarEmail, 20) %></fmt:param>
+       </fmt:message> <b class="caret"></b></a>
+     <%
+     } else {
+     %>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> <fmt:message key="jsp.layout.navbar-default.sign"/> <b class="caret"></b></a>
+   <% } %>             
+              <ul class="dropdown-menu">
+                <li><a href="<%= request.getContextPath() %>/mydspace"><fmt:message key="jsp.layout.navbar-default.users"/></a></li>
+                <li><a href="<%= request.getContextPath() %>/subscribe"><fmt:message key="jsp.layout.navbar-default.receive"/></a></li>
+                <li><a href="<%= request.getContextPath() %>/profile"><fmt:message key="jsp.layout.navbar-default.edit"/></a></li>
+ 
+     <%
+                 if (isAdmin || isCommunityAdmin || isCollectionAdmin) {
+                 %>
+          <li class="divider"></li>
+                            <% if (isAdmin) {%>
+                     
+                                 <li><a href="<%= request.getContextPath()%>/dspace-admin">
+                            <% } else if (isCommunityAdmin || isCollectionAdmin) {%>
+                         
+                                 <li><a href="<%= request.getContextPath()%>/tools">
+                 <% } %>
+                 <fmt:message key="jsp.administer"/></a></li>
+                 <%
+                     }
+       if (user != null) {
+     %>
+     <li><a href="<%= request.getContextPath() %>/logout"><span class="glyphicon glyphicon-log-out"></span> <fmt:message key="jsp.layout.navbar-default.logout"/></a></li>
+     <% } %>
+              </ul>
+            </li>
+           </ul>
+           
+   </div>
+   </nav>
+      </div>
 
   <div class="header-middle">
-    <img height="60" src="<%= request.getContextPath() %>/image/logo-header.png" alt="Header logo" />
-    <img height="60" src="<%= request.getContextPath() %>/image/logo-library.png" alt="Library logo" />
-    <h2>Repositorio Digital</h2>
+    <div class="container">
+      <img height="60" src="<%= request.getContextPath() %>/image/logo-header.png" alt="Header logo" />
+      <img height="60" src="<%= request.getContextPath() %>/image/logo-library.png" alt="Library logo" />
+      <h2>Repositorio Digital</h2>
+    </div>
   </div>
 
 </div>
