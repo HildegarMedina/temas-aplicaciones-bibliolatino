@@ -509,9 +509,9 @@ main#content::before {
     display: flex;
     justify-content: space-between;
     padding-left: 0;
-    margin-bottom: 30px;
+    margin-bottom: 30px; 
 }
-#linksBar ul li a {
+#linksBar ul li a { 
     display: flex;
     flex-direction: column;
     color: #000;
