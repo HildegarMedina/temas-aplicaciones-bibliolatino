@@ -356,12 +356,12 @@ a {
     position: relative;
 }
 .panel-primary {
-    border-color: #ac0c0f;
+    border-color: #428bca;
     background: #fff !important;
 }
 .panel-primary > .panel-heading, #main-query-submit {
-    background: #ac0c0f;
-    border-color: #ac0c0f;
+    background: #428bca;
+    border-color: #428bca;
 }
 .btn-info {
     background: #ac0c0f;
@@ -385,15 +385,7 @@ table {
     background-color: #ac0c0f;
     border-color: #ac0c0f;
 }
-.btn-success {
-    background: #ac0c0f;
-    border-color: #ac0c0f;
-    transition: all ease 300ms;
-}
-.btn-success:hover {
-    background: #9b162a;
-    border-color: #9b162a;
-}
+
 
 /*------Header-----*/
 .header-top {
@@ -510,8 +502,6 @@ main#content::before {
 }
 .breadcrumb.btn-success {
     position: relative;
-    background-image: none;
-    background: #236aaa;
     padding: 6px 10px 3px 10px;
 }
 #linksBar ul {
