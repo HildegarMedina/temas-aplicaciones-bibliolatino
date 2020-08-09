@@ -107,6 +107,22 @@
     <%-- HACK: marginwidth, marginheight: for non-CSS compliant Netscape browser --%>
     <body class="">
 <a class="sr-only" href="#content">Skip navigation</a>
+<div class="header-top">
+    <div class="container">
+        <ul>
+            <li><a href="#">Estudiantes</a></li>
+            <li><a href="#">Egresados</a></li>
+            <li><a href="#">Docentes</a></li>
+        </ul>
+        <div>
+            <div id="google_translate_element"></div><script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'en,es,pt,fr,it,zh-TW,ja,de,ru,ar,ca,el,eu,gn,ko,qu,th,uk,vi', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+            }
+            </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        </div>
+    </div>
+</div>
 <header class="navbar navbar-inverse">    
     <%
     if (!navbar.equals("off"))
@@ -127,28 +143,6 @@
     }
 %>
 </header>
-
-
-<div class="header-bottom">
-    <div class="container">
-        <%-- Search Box --%>
-          <form method="get" action="<%= request.getContextPath() %>/simple-search" class="navbar-form navbar-right" id="form-home">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="<fmt:message key="jsp.layout.navbar-default.search"/>" name="query" id="tequery" size="25"/>
-              </div>
-              <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span> Buscar</button>
-      <%--               <br/><a href="<%= request.getContextPath() %>/advanced-search"><fmt:message key="jsp.layout.navbar-default.advanced"/></a>
-      <%
-                  if (ConfigurationManager.getBooleanProperty("webui.controlledvocabulary.enable"))
-                  {
-      %>        
-                    <br/><a href="<%= request.getContextPath() %>/subject-search"><fmt:message key="jsp.layout.navbar-default.subjectsearch"/></a>
-      <%
-                  }
-      %> --%>
-          </form>
-      </div>
-</div>
 
 <main id="content" role="main">
 

@@ -92,10 +92,13 @@
          <!-- <a class="navbar-brand" href="<%= request.getContextPath() %>/"><img height="25" src="<%= request.getContextPath() %>/image/dspace-logo-only.png" alt="DSpace logo" /></a> -->
        </div>
       </div>
-    <div class="header-top">
+    <div class="header-middle">
       <div class="container">
 
         <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+          <div class="logo-menu">
+            <img src="<%= request.getContextPath() %>/image/logo-con-fondo.png" alt="Logo">
+          </div>
           <ul class="nav navbar-nav">
             <li class="<%= currentPage.endsWith("/home.jsp")? "active" : "" %>"><a href="<%= request.getContextPath() %>/"><span class="glyphicon glyphicon-home"></span> <fmt:message key="jsp.layout.navbar-default.home"/></a></li>
                  
@@ -125,11 +128,6 @@
            <li class="<%= ( currentPage.endsWith( "/help" ) ? "active" : "" ) %>"><dspace:popup page="<%= LocaleSupport.getLocalizedMessage(pageContext, \"help.index\") %>"><fmt:message key="jsp.layout.navbar-default.help"/></dspace:popup></li>
            <li>
 
-           <div id="google_translate_element"></div><script type="text/javascript">
-            function googleTranslateElementInit() {
-              new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'en,es,pt,fr,it,zh-TW,ja,de,ru,ar,ca,el,eu,gn,ko,qu,th,uk,vi', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
-            }
-            </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
            </li>
         </ul>
  
@@ -208,16 +206,5 @@
    </nav>
       </div>
     </div>
-
-  <div class="header-middle">
-    <div class="container">
-      <div class="between">
-        <img src="<%= request.getContextPath() %>/image/EspochBanner3.png" alt="#" style="width: 100%; height: auto;">
-        <!-- <img height="60" src="<%= request.getContextPath() %>/image/logo-header.png" alt="Header logo" />
-        <img height="60" src="<%= request.getContextPath() %>/image/logo-library.png" alt="Library logo" />
-        <h2>Repositorio Digital</h2> -->
-      </div>
-    </div>
-  </div>
 
 </div>
