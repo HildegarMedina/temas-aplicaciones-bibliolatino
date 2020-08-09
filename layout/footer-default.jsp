@@ -39,28 +39,108 @@
 </main>
         <%-- Page footer --%>
         <footer class="navbar navbar-inverse navbar-bottom">
-            <div class="rrss">
-                <div class="container">
-                    <ul>
-                        <li>Síganos en</li>
-                        <li><a target="blank" href="https://web.facebook.com/bibliotecacentralespoch/?eid=ARDQH71lSyrSaYEM0-r-w8Qd1rgQsBUQ-3piYvIGXtnFFyIUJfL0rZOFb6zTIFHcKbYhUElxqs9PlJu2&_rdc=1&_rdr"><img src="<%= request.getContextPath() %>/image/icon-facebook.png" alt=""></a></li>
-                        <li><a target="blank" href="#"><img src="<%= request.getContextPath() %>/image/icon-twitter.png" alt=""></a></li>
-                        <li><a target="blank" href="#"><img src="<%= request.getContextPath() %>/image/icon-googleplus.png" alt=""></a></li>
-                        <li><a target="blank" href="#"><img src="<%= request.getContextPath() %>/image/icon-youtube.png" alt=""></a></li>
-                        <li><a target="blank" href="#"><img src="<%= request.getContextPath() %>/image/icon-pinterest.png" alt=""></a></li>
-                        <li><a target="blank" href="#"><img src="<%= request.getContextPath() %>/image/icon-tumblr.png" alt=""></a></li>
-                        <!--<li><a target="blank" href="https://www.konradlorenz.edu.co/es/noticias/noticias-generales-de-la-institucion.html?format=feed&type=atom"><img src="/konradlorenz/images/icon-rss.png" alt=""></a></li>-->
-                  </ul>
-                  </div>
-            </div>
             <div class="content-footer">
                 <div class="container">
-                    <h4>ESCUELA SUPERIOR POLITÉCNICA DE CHIMBORAZO</h4>
-                    <p> Dirección de Bibliotecas y Recursos para el Aprendizaje e Investigación <br>
-                        Panamericana Sur Km 1 1/2 - Riobamba, Ecuador <br>
-                        593(03) 2998-200 ext: 1066 <br>
-                        biblioteca@espoch.edu.ec
-                        .</p>
+                    <div class="footerExternadoBottom">
+                        <div class="footerExternadoContainer">
+                          <div class="footerExternadoBottomColumns">
+                            <div class="colLeft">
+                              <a href="/" class="logo">
+                                <img class="logo-footer" src="https://bdigital.uexternado.edu.co/image/logo-uec.svg" alt="Universidad Externado de Colombia">
+                              </a>
+                              <p>Universidad Externado de Colombia <br>
+                                Teléfonos: (571) 3537000, 3420288 y 3419900 <br>
+                                Calle 12 No. 1-17 Este. Bogotá, Colombia. <br> </p>
+                              <a href="https://www.uexternado.edu.co/documentos-institucionales-derechos-pecuniarios/">Documentos
+                                institucionales y derechos pecuniarios</a><br>
+                              <a href="https://www.uexternado.edu.co/politicasdeprivacidad/">Política de tratamiento
+                                de los datos
+                                personales</a>
+                              <section class="sgs-acreditacion">
+                                <a target="_blank" style="width: 5.9375rem; height: 6.75rem;" href="https://certifiedclientsportal.sgs.com/CCP2/Public/CertificateView?Id=470011261&amp;m">
+                                  <img src="https://bdigital.uexternado.edu.co/image/sgs-2017-1.svg" alt="System Certification ISO 9001:2000" width="95">
+                                </a>
+                              </section>
+                            </div>
+                            <!--colLeft-->
+                    
+                            <div class="colCenter">
+                              <section class="contactenos">
+                                <h4>Contáctenos</h4>
+                                <ul>
+                                  <li>
+                                    <a href="https://www.uexternado.edu.co/buzon-electronico/">
+                                      Buzón electrónico </a>
+                                  </li>
+                    
+                                  <li>
+                                    <a href="https://directorio.uexternado.edu.co/">
+                                      Directorio </a>
+                                  </li>
+                                </ul>
+                              </section>
+                              <section class="visitenos">
+                                <h4>Visite la Universidad</h4>
+                                <img class="foto-visitenos" src="https://bdigital.uexternado.edu.co/image/footer-campus.png" alt="Campus Externado">
+                                <ul>
+                                  <li><a href="https://www.uexternado.edu.co/la-universidad-externado-de-colombia/como-llegar/">Rutas
+                                      de
+                                      acceso</a></li>
+                                  <li><a href="https://www.uexternado.edu.co/parqueaderos/">Parqueaderos</a>
+                                  </li>
+                                  <li><a href="https://www.uexternado.edu.co/mapa-del-campus/">Mapa del
+                                      campus</a></li>
+                                  <li><a href="https://www.uexternado.edu.co/recorrido-aereo-por-la-universidad/">Recorrido
+                                      aéreo</a></li>
+                                </ul>
+                              </section>
+                            </div>
+                            <!--colCenter-->
+                    
+                            <div class="colRight">
+                              <section>
+                                <h4>Síganos en las redes sociales</h4>
+                                <div class="redes-sociales">
+                                  <ul>
+                                    <li><a target="blank" href="https://www.facebook.com/uexternado"><img src="https://bdigital.uexternado.edu.co/image/icon-facebook.svg" alt=""></a></li>
+                                    <li><a target="blank" href="https://twitter.com/UExternado"><img src="https://bdigital.uexternado.edu.co/image/icon-twitter.svg" alt=""></a>
+                                    </li>
+                                    <li><a target="blank" href="https://www.youtube.com/externadodecolombia"><img src="https://bdigital.uexternado.edu.co/image/icon-youtube.svg" alt=""></a></li>
+                                    <li><a target="blank" href="https://www.linkedin.com/edu/school?id=11601&amp;trk=tyah&amp;trkInfo=clickedVertical:school,clickedEntityId:11601,idx:4-1-11,tarId:1484858838825,tas:externado%20"><img src="https://bdigital.uexternado.edu.co/image/icon-linkedin.svg" alt=""></a></li>
+                                    <li><a target="blank" href="https://instagram.com/uexternado/"><img src="https://bdigital.uexternado.edu.co/image/icon-instagram.svg" alt=""></a></li>
+                                  </ul>
+                                </div>
+                              </section>
+                              <section>
+                                <h4>Servicios académicos</h4>
+                                <ul>
+                                  <li>
+                                    <a href="https://mail.office365.com/">Correo electrónico</a>
+                                  </li>
+                                  <li>
+                                    <a href="https://account.activedirectory.windowsazure.com/PasswordReset/Register.aspx">Registro
+                                      de
+                                      información para recuperación de clave del correo
+                                      electrónico</a>
+                                  </li>
+                                  <li>
+                                    <a href="https://www.uexternado.edu.co/pagos-en-linea/">Pagos en
+                                      línea</a>
+                                  </li>
+                                </ul>
+                              </section>
+                              <a href="https://www.uexternado.edu.co/la-universidad/certificacion-de-calidad/">
+                                <h4> Certificación de Calidad </h4>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="vigilado-men">
+                    
+                          </div>
+                        </div>
+                        <!--colRight-->
+                    
+                      </div>
                 </div>
             </div>
             <div id="designedby" class="container text-muted">
