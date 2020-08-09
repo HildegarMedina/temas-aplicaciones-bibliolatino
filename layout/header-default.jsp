@@ -109,17 +109,15 @@
 <a class="sr-only" href="#content">Skip navigation</a>
 <div class="header-top">
     <div class="container">
-        <ul>
-            <li><a href="#">Estudiantes</a></li>
-            <li><a href="#">Egresados</a></li>
-            <li><a href="#">Docentes</a></li>
-        </ul>
         <div>
             <div id="google_translate_element"></div><script type="text/javascript">
             function googleTranslateElementInit() {
                 new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'en,es,pt,fr,it,zh-TW,ja,de,ru,ar,ca,el,eu,gn,ko,qu,th,uk,vi', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
             }
             </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        </div>
+        <div>
+            <a href="#">Iniciar sesión</a>
         </div>
     </div>
 </div>
