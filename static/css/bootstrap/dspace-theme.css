@@ -12,7 +12,7 @@ ol.breadcrumb li {color: white; font-style: italic;}
 ol.breadcrumb li a {color: white; font-weight: bold; font-style: normal;}
 body.undernavigation {overflow-x: hidden; padding-top: 65px;}
 #content {padding-bottom:60px;}
-#designedby {padding: 5px;}
+#designedby {padding: 5px;} 
 #footer_feedback {padding-top: 12px;}
 input[type="file"] {display: block;height: auto;}
 div.panel-primary div.panel-heading a {color: white;}
