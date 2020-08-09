@@ -123,6 +123,14 @@
              </ul>
            </li>
            <li class="<%= ( currentPage.endsWith( "/help" ) ? "active" : "" ) %>"><dspace:popup page="<%= LocaleSupport.getLocalizedMessage(pageContext, \"help.index\") %>"><fmt:message key="jsp.layout.navbar-default.help"/></dspace:popup></li>
+           <li>
+
+           <div id="google_translate_element"></div><script type="text/javascript">
+            function googleTranslateElementInit() {
+              new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'en,es,pt,fr,it,zh-TW,ja,de,ru,ar,ca,el,eu,gn,ko,qu,th,uk,vi', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+            }
+            </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+           </li>
         </ul>
  
   <% if (supportedLocales != null && supportedLocales.length > 1)

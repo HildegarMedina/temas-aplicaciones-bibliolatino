@@ -532,6 +532,12 @@ main#content::before {
 .content-footer p {
     margin-bottom: 0;
 }
-#designedby a {
+#designedby a, .navbar.navbar-inverse.navbar-bottom + center a  {
     color: #fff;
+}
+.navbar.navbar-inverse.navbar-bottom + center {
+    background: #000;
+}
+.navbar.navbar-inverse.navbar-bottom {
+    border-radius: 0;
 }
