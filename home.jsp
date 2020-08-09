@@ -141,7 +141,7 @@ if (communities != null && communities.size() != 0)
 	boolean showLogos = configurationService.getBooleanProperty("jspui.home-page.logos", true);
     for (Community com : communities)
     {
-%><div class="list-group-item row">
+%><div class="list-group-item row fix-home">
 <%  
 		Bitstream logo = com.getLogo();
 		if (showLogos && logo != null) { %>
