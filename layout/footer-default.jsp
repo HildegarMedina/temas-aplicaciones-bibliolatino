@@ -43,23 +43,24 @@
                 <div class="container">
                     <ul>
                         <li>Síganos en</li>
-                        <li><a target="blank" href="https://www.facebook.com/u.konradlorenz"><img src="<%= request.getContextPath() %>/image/icon-facebook.png" alt=""></a></li>
-                        <li><a target="blank" href="https://twitter.com/uKonradLorenz"><img src="<%= request.getContextPath() %>/image/icon-twitter.png" alt=""></a></li>
-                        <li><a target="blank" href="https://plus.google.com/+ukonradlorenz"><img src="<%= request.getContextPath() %>/image/icon-googleplus.png" alt=""></a></li>
-                        <li><a target="blank" href="https://www.youtube.com/user/ukonradlorenz?sub_confirmation=1"><img src="<%= request.getContextPath() %>/image/icon-youtube.png" alt=""></a></li>
-                        <li><a target="blank" href="https://www.pinterest.com/ukonradlorenz"><img src="<%= request.getContextPath() %>/image/icon-pinterest.png" alt=""></a></li>
-                        <li><a target="blank" href="https://ukonradlorenz.tumblr.com"><img src="<%= request.getContextPath() %>/image/icon-tumblr.png" alt=""></a></li>
+                        <li><a target="blank" href="https://web.facebook.com/bibliotecacentralespoch/?eid=ARDQH71lSyrSaYEM0-r-w8Qd1rgQsBUQ-3piYvIGXtnFFyIUJfL0rZOFb6zTIFHcKbYhUElxqs9PlJu2&_rdc=1&_rdr"><img src="<%= request.getContextPath() %>/image/icon-facebook.png" alt=""></a></li>
+                        <li><a target="blank" href="#"><img src="<%= request.getContextPath() %>/image/icon-twitter.png" alt=""></a></li>
+                        <li><a target="blank" href="#"><img src="<%= request.getContextPath() %>/image/icon-googleplus.png" alt=""></a></li>
+                        <li><a target="blank" href="#"><img src="<%= request.getContextPath() %>/image/icon-youtube.png" alt=""></a></li>
+                        <li><a target="blank" href="#"><img src="<%= request.getContextPath() %>/image/icon-pinterest.png" alt=""></a></li>
+                        <li><a target="blank" href="#"><img src="<%= request.getContextPath() %>/image/icon-tumblr.png" alt=""></a></li>
                         <!--<li><a target="blank" href="https://www.konradlorenz.edu.co/es/noticias/noticias-generales-de-la-institucion.html?format=feed&type=atom"><img src="/konradlorenz/images/icon-rss.png" alt=""></a></li>-->
                   </ul>
                   </div>
             </div>
             <div class="content-footer">
                 <div class="container">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, odit ipsum quas molestiae iure iste sapiente velit ratione odio 
-                        voluptatibus sunt nostrum, aliquid hic praesentium, culpa voluptatum modi nemo iusto laudantium. Nihil deserunt optio, aliquid 
-                        facilis alias expedita ipsum animi voluptate blanditiis, quas quisquam quo fugit nulla temporibus ea suscipit voluptates dolores 
-                        saepe excepturi consequatur  u quo minsci nemo cupiditate, voluptatibus beatae. Optio officia, illo ipsa adipisci natus doloremque et 
-                        vitae provident animi aliquid, voluptates eum ad. Moli.</p>
+                    <h4>ESCUELA SUPERIOR POLITÉCNICA DE CHIMBORAZO</h4>
+                    <p> Dirección de Bibliotecas y Recursos para el Aprendizaje e Investigación <br>
+                        Panamericana Sur Km 1 1/2 - Riobamba, Ecuador <br>
+                        593(03) 2998-200 ext: 1066 <br>
+                        biblioteca@espoch.edu.ec
+                        .</p>
                 </div>
             </div>
             <div id="designedby" class="container text-muted">

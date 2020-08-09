@@ -1,3 +1,4 @@
+
 <div class="col-md-12">
 	<div id="linksBar">
 		<div class="container">
@@ -8,6 +9,71 @@
 			<li><a href="/browse?type=dateissued" target="_self"><img src="<%= request.getContextPath() %>/image/icon-dates.svg" alt=""><span>Navegar por Fechas</span></a></li>
 			<li><a href="/browse?type=subject" target="_self"><img src="<%= request.getContextPath() %>/image/icon-subjects.svg" alt=""><span>Navegar por Materias</span></a></li>
 		 </ul>
+		 </div>
+	  </div>
+</div>
+
+<div class="col-md-12">
+	<div id="meddium-bar">
+		<div class="container">
+			<div class="col-md-6">
+				<h3>Estadísticas</h3>
+				<a href="http://aplicaciones.bibliolatino.com/statistics" id="img-stats">
+					<img src="<%= request.getContextPath() %>/image/graph.png" alt="Graficas" class="img-responsive">
+				</a>
+			</div>
+			<div class="col-md-6">
+				<h3>Bases de Datos Suscritas</h3>
+				<div class="flex-ddbb"> 
+
+					<div style="text-align: center;">
+						<a target="_blank" href="http://access.ovid.com/custom/espoch/">
+							<img style="border: 0px solid ; width: 140px; height: 70px;" alt="" src="<%= request.getContextPath() %>/image/Logo Wolters Salud.png">
+						</a><br><br>
+					</div> 
+					<div style="text-align: center;">
+						<a target="_blank" href="http://access.ovid.com/custom/espochagr/">
+							<img style="border: 0px solid ; width: 140px; height: 70px;" alt="" src="<%= request.getContextPath() %>/image/Logo Wolters Veterinary.png">
+						</a><br><br>
+					</div>
+
+					<div style="text-align: center;">
+						<a target="_blank" href="http://asmestandardscollection.org/dashboard.aspx">
+							<img style="border: 0px solid ; width: 140px; height: 70px;" alt="" src="<%= request.getContextPath() %>/image/Logo ASME.png">
+						</a><br><br>
+					</div>
+					<div style="text-align: center;">
+						<a href="https://compass.astm.org" target="_blank">
+							<img style="border: 0px solid ; width: 140px; height: 70px;" alt="" src="<%= request.getContextPath() %>/image/Logo ASTM.png">
+						</a><br><br>
+					</div>
+
+					<div style="text-align: center;">
+						<a target="_blank" href="https://link.springer.com/">
+							<img style="border: 0px solid ; width: 140px; height: 70px;" alt="" src="<%= request.getContextPath() %>/image/Springer Espoch.jpg">
+						</a><br><br>
+					</div>
+					<div style="text-align: center;">
+						<a target="_blank" href="http://rraae.org.ec">
+							<img style="border: 0px solid ; width: 127px; height: 54px;" alt="Repositorio de tesis ECUADOR" src="<%= request.getContextPath() %>/image/rraae.png">
+							<br><br>
+						</a>
+					</div>
+
+					<div style="text-align: center;">
+						<a target="_blank" href="https://www.tandfonline.com/">
+							<img style="border: 0px solid ; width: 140px; height: 40px;" alt="" src="<%= request.getContextPath() %>/image/Taylor Espoch.png">
+							<br><br>
+						</a>
+					</div>
+					<div style="text-align: center;">
+						<a target="_blank" href="https://elibro.net/es/lc/espoch/inicio">
+							<img style="border: 0px solid ; width: 140px; height: 42px;" alt="" src="<%= request.getContextPath() %>/image/eLibro Espoch.jpg">
+							<br><br>
+						</a>
+					</div>
+				</div>
+			</div>
 		 </div>
 	  </div>
 </div>
@@ -88,18 +154,18 @@
 
 	
 
-<div class="row">
+<!-- <div class="row">
 
 	<div class="container">
 		<div id="myCarousel" class="carousel slide" data-ride="carousel">
-			<!-- Indicators -->
+
 			<ol class="carousel-indicators">
 			  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 			  <li data-target="#myCarousel" data-slide-to="1"></li>
 			  <li data-target="#myCarousel" data-slide-to="2"></li>
 			</ol>
 		  
-			<!-- Wrapper for slides -->
+
 			<div class="carousel-inner">
 			  <div class="item active">
 				<img src="https://repositorio.konradlorenz.edu.co/retrieve/cc522715-a581-4a6e-a344-c70b5b23c40b/miniatura%20para%20el%20aula_modificada.jpg" alt="Los Angeles" style="margin: 0 auto;">
@@ -113,20 +179,18 @@
 				<img src="https://repositorio.konradlorenz.edu.co/retrieve/cc522715-a581-4a6e-a344-c70b5b23c40b/miniatura%20para%20el%20aula_modificada.jpg" alt="New York" style="margin: 0 auto;">
 			  </div>
 			</div>
-		  
-			<!-- Left and right controls -->
-			<!-- <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+		
 			  <span class="glyphicon glyphicon-chevron-left"></span>
 			  <span class="sr-only">Previous</span>
 			</a>
 			<a class="right carousel-control" href="#myCarousel" data-slide="next">
 			  <span class="glyphicon glyphicon-chevron-right"></span>
 			  <span class="sr-only">Next</span>
-			</a> -->
+			</a>
 		  </div>
 	</div>
 
-</div>
+</div> -->
 <div class="container row card-group-custom">
 	
 <%

@@ -154,13 +154,13 @@
 
 </div>
 <br />
-<div style="text-align: center;"><a
+<!-- <div style="text-align: center;"><a
 href="https://aplicaciones.bibliolatino.com/"><img
 style="border: 0px solid ; width: 90%; height: 140px;"
 alt="aplicaciones bibliolatino"
 src="https://aplicaciones.bibliolatino.com/image/banner.png"></a>
 <br>
-</div>
+</div> -->
 
                 <%-- Location bar --%>
 <%

@@ -212,9 +212,10 @@
   <div class="header-middle">
     <div class="container">
       <div class="between">
-        <img height="60" src="<%= request.getContextPath() %>/image/logo-header.png" alt="Header logo" />
+        <img src="<%= request.getContextPath() %>/image/EspochBanner3.png" alt="#" style="width: 100%; height: auto;">
+        <!-- <img height="60" src="<%= request.getContextPath() %>/image/logo-header.png" alt="Header logo" />
         <img height="60" src="<%= request.getContextPath() %>/image/logo-library.png" alt="Library logo" />
-        <h2>Repositorio Digital</h2>
+        <h2>Repositorio Digital</h2> -->
       </div>
     </div>
   </div>
