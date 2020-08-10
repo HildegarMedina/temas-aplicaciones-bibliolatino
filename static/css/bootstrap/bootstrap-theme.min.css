@@ -510,6 +510,13 @@ main#content::before {
     justify-content: space-between;
     padding-left: 0;
     margin-bottom: 30px;
+    max-width: 650px;
+    margin: 10px auto;
+}
+#linksBar ul li {
+    flex: 1;
+    display: flex;
+    justify-content: center;
 }
 #linksBar ul li a {
     display: flex;
