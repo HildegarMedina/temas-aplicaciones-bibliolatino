@@ -71,16 +71,16 @@ RecentSubmissions submissions = (RecentSubmissions) request.getAttribute("recent
 ItemService itemService = ContentServiceFactory.getInstance().getItemService();
 CommunityService communityService = ContentServiceFactory.getInstance().getCommunityService();
 %>
-<div class="col-md-12">
-	<div class="header-bottom">
+<div class="col-md-12 fix-home">
+	<div class="search-content">
 	  <div class="container">
-		  <h2>Biblioteca Digital</h2>
+		  <h2 class="title-form">Biblioteca Digital</h2>
 		  <%-- Search Box --%>
 			<form method="get" action="<%= request.getContextPath() %>/simple-search" class="navbar-form navbar-right" id="form-home">
 				<div class="form-group">
 				  <input type="text" class="form-control" placeholder="<fmt:message key="jsp.layout.navbar-default.search"/>" name="query" id="tequery" size="25"/>
 				</div>
-				<button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span> Buscar</button>
+				<button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span></button>
 		<%--               <br/><a href="<%= request.getContextPath() %>/advanced-search"><fmt:message key="jsp.layout.navbar-default.advanced"/></a>
 		<%
 					if (ConfigurationManager.getBooleanProperty("webui.controlledvocabulary.enable"))
@@ -96,11 +96,11 @@ CommunityService communityService = ContentServiceFactory.getInstance().getCommu
 	<div id="linksBar">
 		<div class="container">
 		 <ul>
-			<li><a href="/community-list" target="_self"><img src="<%= request.getContextPath() %>/image/icon-collections.svg" alt=""><span>Navegar por Colecciones</span></a></li>
-			<li><a href="/browse?type=author" target="_self"><img src="<%= request.getContextPath() %>/image/icon-authors.svg" alt=""><span>Navegar por Autores</span></a></li>
-			<li><a href="/browse?type=title" target="_self"><img src="<%= request.getContextPath() %>/image/icon-titles.svg" alt=""><span>Navegar por Titulos</span></a></li>
-			<li><a href="/browse?type=dateissued" target="_self"><img src="<%= request.getContextPath() %>/image/icon-dates.svg" alt=""><span>Navegar por Fechas</span></a></li>
-			<li><a href="/browse?type=subject" target="_self"><img src="<%= request.getContextPath() %>/image/icon-subjects.svg" alt=""><span>Navegar por Materias</span></a></li>
+			<li><a href="/community-list" target="_self"><img src="<%= request.getContextPath() %>/image/icono-colecciones.svg" alt=""></a></li>
+			<li><a href="/browse?type=author" target="_self"><img src="<%= request.getContextPath() %>/image/icono-autores.svg" alt=""></a></li>
+			<li><a href="/browse?type=title" target="_self"><img src="<%= request.getContextPath() %>/image/icono-titulos.svg" alt=""></a></li>
+			<li><a href="/browse?type=dateissued" target="_self"><img src="<%= request.getContextPath() %>/image/icono-fechas.svg" alt=""></a></li>
+			<li><a href="/browse?type=subject" target="_self"><img src="<%= request.getContextPath() %>/image/icono-materias.svg" alt=""></a></li>
 		 </ul>
 		 </div>
 	  </div>
