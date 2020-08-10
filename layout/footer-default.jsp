@@ -46,7 +46,7 @@
                           <div class="footerExternadoBottomColumns">
                             <div class="colLeft">
                               <a href="/" class="logo">
-                                <img class="logo-footer" src="<%= request.getContextPath() %>image/logo-con-fondo.png" alt="Logo footer">
+                                <img class="logo-footer" src="<%= request.getContextPath() %>image/logo-sin-fondo.png" alt="Logo footer">
                               </a>
                               <p>Escuela Superior Politécnica de Chimborazo<br>
                                 Panamericana Sur Km 1 1/2 - Riobamba, Ecuador<br>

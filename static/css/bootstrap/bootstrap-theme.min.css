@@ -366,55 +366,56 @@ h3 {
     border-color: #428bca;
 }
 .btn-info {
-    background: #ac0c0f;
-    border-color: #ac0c0f;
+    background: #af1c32;
+    border-color: #af1c32;
 }
 table {
     background-color: #f3f3f3;
 }
 .panel-success {
-    border-color: #ac0c0f;
+    border-color: #af1c32;
 }
 .alert-info, .panel-info > .panel-heading, .panel-success > .panel-heading {
-    background: #ac0c0f;
+    background: #af1c32;
     color: #fff;
-    border-color: #ac0c0f;
+    border-color: #af1c32;
 }
 .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
     z-index: 2;
     color: #fff;
     cursor: default;
-    background-color: #ac0c0f;
-    border-color: #ac0c0f;
+    background-color: #af1c32;
+    border-color: #af1c32;
 }
 
 
 /*------Header-----*/
 .header-top {
     background: #fff;
-    border-top: 3px solid #fa7252;
+    border-top: 3px solid #e40613;
     padding: 0;
+    position: relative;
 }
 #google_translate_element {
     text-align: right;
 }
 #google_translate_element .goog-te-gadget-simple {
     position: relative;
-    background: #ac0c0f;
+    background: #af1c32;
     color: #fff;
     padding: 7px;
     border: 0;
 }
 #google_translate_element .goog-te-gadget-simple:before {
     border-bottom: 36px inset transparent;
-    border-right: 23px solid #ac0c0f;
+    border-right: 23px solid #af1c32;
     content: "";
     left: -22px;
     position: absolute;
     top: 0;
 }
 #google_translate_element .goog-te-gadget-simple:after {
-    border-left: 23px solid #ac0c0f;
+    border-left: 23px solid #af1c32;
     border-top: 35px inset transparent;
     content: "";
     right: -22px;
@@ -428,7 +429,7 @@ table {
     border-radius: 50%;
 }
 .header-middle {
-    background: #ac0c0f;
+    background: #af1c32;
     height: 60px;
     border: 0;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.75);
@@ -444,10 +445,10 @@ table {
 }
 .logo-menu {
     position: relative;
-    top: -21px;
+    top: -12px;
     width: 260px;
     background: #820c0e;
-    padding: 10px;
+    padding: 15px 10px;
 }
 .logo-menu img {
     width: 100%;
@@ -472,7 +473,7 @@ table {
 .navbar-inverse .navbar-nav > .active > a:hover, 
 .navbar-inverse .navbar-nav > .active > a:focus {
     background: #820c0e;
-    color: #fa7252;
+    color: #e40613;
 }
 .nav.navbar-nav .glyphicon {
     position: relative;
@@ -488,7 +489,7 @@ table {
     display: block;
     min-width: 200px;
     font-size: 15px;
-    border-bottom: 3px solid #fa7252;
+    border-bottom: 3px solid #e40613;
     padding: 0;
 }
 .dropdown-menu > li > a {
@@ -497,7 +498,7 @@ table {
     clear: both;
     font-weight: normal;
     line-height: 1.428571429;
-    color: #ac0c0f;
+    color: #af1c32;
     white-space: nowrap;
     margin: 0 5px;
     border-bottom: thin dotted #cacaca;
@@ -506,7 +507,7 @@ table {
     border-bottom: 0;
 }
 .dropdown-menu > li > a:hover {
-    color: #fa7252;
+    color: #e40613;
     background: none;
 }
 .dropdown-menu .divider {
@@ -518,7 +519,7 @@ table {
     display: block;
     text-align: center;
     font-weight: bold;
-    color: #ac0c0f;
+    color: #af1c32;
 }
 #form-home {
     display: flex;
@@ -536,7 +537,6 @@ table {
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.7);
     box-shadow: 3px 1px 3px rgba(3, 3, 3, 0.2);
-    transition: var(--cubicBezier);
     margin-top: 40px;
     margin-bottom: 30px;
 }
@@ -545,8 +545,9 @@ table {
     background: none;
 }
 #form-home .btn.btn-primary span {
-    color: #ac0c0f;
-    font-size: 26px;
+    color: #af1c32;
+    font-size: 27px;
+    margin-top: 12px;
 }
 .search-content {
     margin-top: 100px;
@@ -608,7 +609,7 @@ main#content::before {
 .carousel-control .icon-prev, .carousel-control .icon-next {
     margin-top: -75px;
     font-size: 100px;
-    color: #ac0c0f;
+    color: #af1c32;
     opacity: 0.7;
 }
 .carousel-control {
@@ -619,8 +620,8 @@ main#content::before {
 }
 .panel-custom h4 {
     font-size: 30px;
-    color: #ac0c0f;
-    border-left: 4px solid #ac0c0f;
+    color: #af1c32;
+    border-left: 4px solid #af1c32;
     padding-left: 15px;
     padding-top: 5px;
     margin-bottom: 20px;
@@ -714,7 +715,7 @@ main#content::before {
 }
 .redes-sociales ul li a {
     padding: 9px 5px;
-    background: #fa7252;
+    background: #e40613;
     margin-right: 10px;
 }
 
