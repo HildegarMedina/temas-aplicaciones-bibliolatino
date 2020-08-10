@@ -5,6 +5,8 @@
 		 <ul>
 			<li><a href="/community-list" target="_self"><img src="<%= request.getContextPath() %>/image/icon-collections.svg" alt=""><span>Navegar por Colecciones</span></a></li>
 			<li><a href="/browse?type=author" target="_self"><img src="<%= request.getContextPath() %>/image/icon-authors.svg" alt=""><span>Navegar por Autores</span></a></li>
+			<li><a href="/browse?type=advisor" target="_self"><img src="<%= request.getContextPath() %>/image/estudiante.svg" alt=""><span>Director</span></a></li>
+			<li><a href="/browse?type=miembrotribunal" target="_self"><img src="<%= request.getContextPath() %>/image/estudiante(1).svg" alt=""><span>Tribunal</span></a></li>
 			<li><a href="/browse?type=title" target="_self"><img src="<%= request.getContextPath() %>/image/icon-titles.svg" alt=""><span>Navegar por Titulos</span></a></li>
 			<li><a href="/browse?type=dateissued" target="_self"><img src="<%= request.getContextPath() %>/image/icon-dates.svg" alt=""><span>Navegar por Fechas</span></a></li>
 			<li><a href="/browse?type=subject" target="_self"><img src="<%= request.getContextPath() %>/image/icon-subjects.svg" alt=""><span>Navegar por Materias</span></a></li>
