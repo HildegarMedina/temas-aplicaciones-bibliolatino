@@ -77,7 +77,7 @@
                               <section class="visitenos">
                                 <h4>Universidad</h4>
                                 <div class="content-visitenos">
-                                  <img class="foto-visitenos" src="<%= request.getContextPath() %>image/footer-campus.png" alt="Campus Externado">
+                                  <img class="foto-visitenos" src="<%= request.getContextPath() %>/image/footer-campus.jpg" alt="Campus">
                                   <ul>
                                     <li><a href="https://www.ucacue.edu.ec/la-universidad/">UCACUE</a></li>
                                     <li><a href="https://www.ucacue.edu.ec/la-universidad/mision-y-vision/">Misión y Vision</a>
@@ -96,11 +96,11 @@
                                 <h4>Síganos en las redes sociales</h4>
                                 <div class="redes-sociales">
                                   <ul>
-                                    <li><a target="blank" href="https://www.facebook.com/UCatoCuenca/"><img src="<%= request.getContextPath() %>image/icon-facebook.svg" alt=""></a></li>
-                                    <li><a target="blank" href="https://twitter.com/@UCatoCuenca"><img src="<%= request.getContextPath() %>image/icon-twitter.svg" alt=""></a>
+                                    <li><a target="blank" href="https://www.facebook.com/UCatoCuenca/"><img src="<%= request.getContextPath() %>/image/icon-facebook.svg" alt=""></a></li>
+                                    <li><a target="blank" href="https://twitter.com/@UCatoCuenca"><img src="<%= request.getContextPath() %>/image/icon-twitter.svg" alt=""></a>
                                     </li>
-                                    <li><a target="blank" href="https://www.youtube.com/channel/UCGVWtXf8V7_-mknqXecQzgQ"><img src="<%= request.getContextPath() %>image/icon-youtube.svg" alt=""></a></li>
-                                    <li><a target="blank" href="https://www.instagram.com/ucatocuenca/"><img src="<%= request.getContextPath() %>image/icon-instagram.svg" alt=""></a></li>
+                                    <li><a target="blank" href="https://www.youtube.com/channel/UCGVWtXf8V7_-mknqXecQzgQ"><img src="<%= request.getContextPath() %>/image/icon-youtube.svg" alt=""></a></li>
+                                    <li><a target="blank" href="https://www.instagram.com/ucatocuenca/"><img src="<%= request.getContextPath() %>/image/icon-instagram.svg" alt=""></a></li>
                                   </ul>
                                 </div>
                               </section>

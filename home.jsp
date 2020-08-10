@@ -71,6 +71,12 @@ RecentSubmissions submissions = (RecentSubmissions) request.getAttribute("recent
 ItemService itemService = ContentServiceFactory.getInstance().getItemService();
 CommunityService communityService = ContentServiceFactory.getInstance().getCommunityService();
 %>
+<style>
+	main#content::before {
+		height: calc(85% - 450px);
+		background: url("http://aplicaciones.bibliolatino.com/image/overlay.svg") no-repeat center bottom/cover rgba(253, 250, 250, 0.6);
+	}
+</style>
 <div class="col-md-12 fix-home">
 	<div class="search-content">
 	  <div class="container">

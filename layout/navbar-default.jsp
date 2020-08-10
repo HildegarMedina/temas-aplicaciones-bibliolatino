@@ -96,9 +96,9 @@
       <div class="container">
 
         <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-          <div class="logo-menu">
+          <a href="<%= request.getContextPath() %>/" class="logo-menu">
             <img src="<%= request.getContextPath() %>/image/logo-sin-fondo.png" alt="Logo">
-          </div>
+          </a>
           <ul class="nav navbar-nav">
             <li class="<%= currentPage.endsWith("/home.jsp")? "active" : "" %>"><a href="<%= request.getContextPath() %>/"><span class="glyphicon glyphicon-home"></span> <fmt:message key="jsp.layout.navbar-default.home"/></a></li>
                  
