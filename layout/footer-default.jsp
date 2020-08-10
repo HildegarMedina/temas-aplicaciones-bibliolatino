@@ -48,15 +48,14 @@
                               <a href="/" class="logo">
                                 <img class="logo-footer" src="<%= request.getContextPath() %>image/logo-sin-fondo.png" alt="Logo footer">
                               </a>
-                              <p>Escuela Superior Politécnica de Chimborazo<br>
-                                Panamericana Sur Km 1 1/2 - Riobamba, Ecuador<br>
-                                593(03) 2998-200 ext: 1066
-                                biblioteca@espoch.edu.ec</p>
-                              <a href="https://www.uexternado.edu.co/documentos-institucionales-derechos-pecuniarios/">Documentos
-                                institucionales y derechos pecuniarios</a><br>
-                              <a href="https://www.uexternado.edu.co/politicasdeprivacidad/">Política de tratamiento
-                                de los datos
-                                personales</a>
+                              <p>Universidad Católica de Cuenca<br>
+                                <b>Teléfonos:</b><br>
+                                593 (07) 2-830-751<br>
+                                2-830-877<br>
+                                2-824-365<br>
+                                <b>Email:</b><br>
+                                info@ucacue.edu.ec</p>
+                              <a href="https://documentacion.ucacue.edu.ec/">Centro de documentación</a><br>
                             </div>
                             <!--colLeft-->
                     
@@ -65,30 +64,27 @@
                                 <h4>Contáctenos</h4>
                                 <ul>
                                   <li>
-                                    <a href="https://www.uexternado.edu.co/buzon-electronico/">
+                                    <a href="mailto:info@ucacue.edu.ec">
                                       Buzón electrónico </a>
                                   </li>
                     
                                   <li>
-                                    <a href="https://directorio.uexternado.edu.co/">
-                                      Directorio </a>
+                                    <a href="https://biblioteca.ucacue.edu.ec">
+                                      Biblioteca </a>
                                   </li>
                                 </ul>
                               </section>
                               <section class="visitenos">
-                                <h4>Visite la Universidad</h4>
+                                <h4>Universidad</h4>
                                 <div class="content-visitenos">
                                   <img class="foto-visitenos" src="<%= request.getContextPath() %>image/footer-campus.png" alt="Campus Externado">
                                   <ul>
-                                    <li><a href="https://www.uexternado.edu.co/la-universidad-externado-de-colombia/como-llegar/">Rutas
-                                        de
-                                        acceso</a></li>
-                                    <li><a href="https://www.uexternado.edu.co/parqueaderos/">Parqueaderos</a>
+                                    <li><a href="https://www.ucacue.edu.ec/la-universidad/">UCACUE</a></li>
+                                    <li><a href="https://www.ucacue.edu.ec/la-universidad/mision-y-vision/">Misión y Vision</a>
                                     </li>
-                                    <li><a href="https://www.uexternado.edu.co/mapa-del-campus/">Mapa del
-                                        campus</a></li>
-                                    <li><a href="https://www.uexternado.edu.co/recorrido-aereo-por-la-universidad/">Recorrido
-                                        aéreo</a></li>
+                                    <li><a href="https://www.ucacue.edu.ec/la-universidad/autoridades/">Autoridades</a></li>
+                                    <li><a href="https://www.ucacue.edu.ec/la-universidad/paseo-virtual-360/">Paseo Virtual</a></li>
+                                    <li><a href="planificacion.ucacue.edu.ec">Campus</a></li>
                                   </ul>
                                 </div>
                               </section>
@@ -109,25 +105,27 @@
                                 </div>
                               </section>
                               <section>
-                                <h4>Servicios académicos</h4>
+                                <h4>Programas académicos</h4>
                                 <ul>
                                   <li>
-                                    <a href="https://mail.office365.com/">Correo electrónico</a>
+                                    <a href="https://www.ucacue.edu.ec/admisiones/">Admisiones</a>
                                   </li>
                                   <li>
-                                    <a href="https://account.activedirectory.windowsazure.com/PasswordReset/Register.aspx">Registro
-                                      de
-                                      información para recuperación de clave del correo
-                                      electrónico</a>
+                                    <a href="https://www.ucacue.edu.ec/pregrado/">Grado</a>
                                   </li>
                                   <li>
-                                    <a href="https://www.uexternado.edu.co/pagos-en-linea/">Pagos en
-                                      línea</a>
+                                    <a href="https://posgrado.ucacue.edu.ec/">Posgrado</a>
+                                  </li>
+                                  <li>
+                                    <a href="https://www.ucacue.edu.ec/la-universidad/campus-universitario/sedes-y-extensiones/">Sedes y Extensiones</a>
+                                  </li>
+                                  <li>
+                                    <a href="https://documentacion.ucacue.edu.ec/collections/show/953">Documentos Académicos</a>
                                   </li>
                                 </ul>
                               </section>
-                              <a href="https://www.uexternado.edu.co/la-universidad/certificacion-de-calidad/">
-                                <h4> Certificación de Calidad </h4>
+                              <a href="https://documentacion.ucacue.edu.ec/collections/show/421">
+                                <h4>Unidades de servicio </h4>
                               </a>
                             </div>
                           </div>

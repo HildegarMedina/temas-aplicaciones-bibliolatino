@@ -200,6 +200,9 @@
      <% } %>
               </ul>
             </li>
+            <li>
+              <a href="https://biblioteca.ucacue.edu.ec/">Red de Bibliotecas </a>
+            </li>
            </ul>
            
    </div>
