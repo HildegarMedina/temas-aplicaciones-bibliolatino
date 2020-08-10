@@ -729,6 +729,10 @@ main#content::before {
 .navbar.navbar-inverse.navbar-bottom + center a {
     color: #fff;
 }
+.right.carousel-control:focus, .left.carousel-control:focus {
+    border: 0;
+    outline: none;
+}
 
 @media(max-width: 768px) {
 
