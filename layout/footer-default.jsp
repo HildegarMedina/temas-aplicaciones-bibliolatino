@@ -46,21 +46,17 @@
                           <div class="footerExternadoBottomColumns">
                             <div class="colLeft">
                               <a href="/" class="logo">
-                                <img class="logo-footer" src="https://bdigital.uexternado.edu.co/image/logo-uec.svg" alt="Universidad Externado de Colombia">
+                                <img class="logo-footer" src="<%= request.getContextPath() %>image/logo-con-fondo.png" alt="Logo footer">
                               </a>
-                              <p>Universidad Externado de Colombia <br>
-                                Teléfonos: (571) 3537000, 3420288 y 3419900 <br>
-                                Calle 12 No. 1-17 Este. Bogotá, Colombia. <br> </p>
+                              <p>Escuela Superior Politécnica de Chimborazo<br>
+                                Panamericana Sur Km 1 1/2 - Riobamba, Ecuador<br>
+                                593(03) 2998-200 ext: 1066
+                                biblioteca@espoch.edu.ec</p>
                               <a href="https://www.uexternado.edu.co/documentos-institucionales-derechos-pecuniarios/">Documentos
                                 institucionales y derechos pecuniarios</a><br>
                               <a href="https://www.uexternado.edu.co/politicasdeprivacidad/">Política de tratamiento
                                 de los datos
                                 personales</a>
-                              <section class="sgs-acreditacion">
-                                <a target="_blank" style="width: 5.9375rem; height: 6.75rem;" href="https://certifiedclientsportal.sgs.com/CCP2/Public/CertificateView?Id=470011261&amp;m">
-                                  <img src="https://bdigital.uexternado.edu.co/image/sgs-2017-1.svg" alt="System Certification ISO 9001:2000" width="95">
-                                </a>
-                              </section>
                             </div>
                             <!--colLeft-->
                     
@@ -81,18 +77,20 @@
                               </section>
                               <section class="visitenos">
                                 <h4>Visite la Universidad</h4>
-                                <img class="foto-visitenos" src="https://bdigital.uexternado.edu.co/image/footer-campus.png" alt="Campus Externado">
-                                <ul>
-                                  <li><a href="https://www.uexternado.edu.co/la-universidad-externado-de-colombia/como-llegar/">Rutas
-                                      de
-                                      acceso</a></li>
-                                  <li><a href="https://www.uexternado.edu.co/parqueaderos/">Parqueaderos</a>
-                                  </li>
-                                  <li><a href="https://www.uexternado.edu.co/mapa-del-campus/">Mapa del
-                                      campus</a></li>
-                                  <li><a href="https://www.uexternado.edu.co/recorrido-aereo-por-la-universidad/">Recorrido
-                                      aéreo</a></li>
-                                </ul>
+                                <div class="content-visitenos">
+                                  <img class="foto-visitenos" src="https://bdigital.uexternado.edu.co/image/footer-campus.png" alt="Campus Externado">
+                                  <ul>
+                                    <li><a href="https://www.uexternado.edu.co/la-universidad-externado-de-colombia/como-llegar/">Rutas
+                                        de
+                                        acceso</a></li>
+                                    <li><a href="https://www.uexternado.edu.co/parqueaderos/">Parqueaderos</a>
+                                    </li>
+                                    <li><a href="https://www.uexternado.edu.co/mapa-del-campus/">Mapa del
+                                        campus</a></li>
+                                    <li><a href="https://www.uexternado.edu.co/recorrido-aereo-por-la-universidad/">Recorrido
+                                        aéreo</a></li>
+                                  </ul>
+                                </div>
                               </section>
                             </div>
                             <!--colCenter-->
