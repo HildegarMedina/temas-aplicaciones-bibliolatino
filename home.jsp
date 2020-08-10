@@ -118,7 +118,7 @@ if (submissions != null && submissions.count() > 0)
 {
 %>
 		<div class="col-md-12">
-			<h3><fmt:message key="jsp.collection-home.recentsub"/>
+			<h3><fmt:message key="jsp.collection-home.recentsub"/><br>
 				<%
 	if(feedEnabled)
 	{
@@ -149,7 +149,7 @@ if (submissions != null && submissions.count() > 0)
 		}
 	%>
 			</h3>
-		<div class="panel panel-primary">        
+		<div class="panel panel-custom">        
 		<div id="recent-submissions-carousel" class="panel-heading carousel slide">
 			
 			<!-- Wrapper for slides -->
@@ -170,9 +170,10 @@ if (submissions != null && submissions.count() > 0)
 				}
 		%>
 			<div style="padding-bottom: 50px; min-height: 200px;" class="item <%= first?"active":""%>">
-				<div style="padding-left: 80px; padding-right: 80px; display: inline-block;"><%= Utils.addEntities(StringUtils.abbreviate(displayTitle, 400)) %> 
+				<div style="padding-left: 80px; padding-right: 80px; display: inline-block;">
+					<h4><%= Utils.addEntities(StringUtils.abbreviate(displayTitle, 400)) %> </h4>
+					<p><%= Utils.addEntities(StringUtils.abbreviate(displayAbstract, 500)) %></p>
 					<a href="<%= request.getContextPath() %>/handle/<%=item.getHandle() %>" class="btn btn-success">See</a>
-						<p><%= Utils.addEntities(StringUtils.abbreviate(displayAbstract, 500)) %></p>
 				</div>
 			</div>
 		<%
