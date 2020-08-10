@@ -78,7 +78,7 @@
                               <section class="visitenos">
                                 <h4>Visite la Universidad</h4>
                                 <div class="content-visitenos">
-                                  <img class="foto-visitenos" src="https://bdigital.uexternado.edu.co/image/footer-campus.png" alt="Campus Externado">
+                                  <img class="foto-visitenos" src="<%= request.getContextPath() %>image/footer-campus.png" alt="Campus Externado">
                                   <ul>
                                     <li><a href="https://www.uexternado.edu.co/la-universidad-externado-de-colombia/como-llegar/">Rutas
                                         de
@@ -100,12 +100,11 @@
                                 <h4>Síganos en las redes sociales</h4>
                                 <div class="redes-sociales">
                                   <ul>
-                                    <li><a target="blank" href="https://www.facebook.com/uexternado"><img src="https://bdigital.uexternado.edu.co/image/icon-facebook.svg" alt=""></a></li>
-                                    <li><a target="blank" href="https://twitter.com/UExternado"><img src="https://bdigital.uexternado.edu.co/image/icon-twitter.svg" alt=""></a>
+                                    <li><a target="blank" href="https://www.facebook.com/UCatoCuenca/"><img src="<%= request.getContextPath() %>image/icon-facebook.svg" alt=""></a></li>
+                                    <li><a target="blank" href="https://twitter.com/@UCatoCuenca"><img src="<%= request.getContextPath() %>image/icon-twitter.svg" alt=""></a>
                                     </li>
-                                    <li><a target="blank" href="https://www.youtube.com/externadodecolombia"><img src="https://bdigital.uexternado.edu.co/image/icon-youtube.svg" alt=""></a></li>
-                                    <li><a target="blank" href="https://www.linkedin.com/edu/school?id=11601&amp;trk=tyah&amp;trkInfo=clickedVertical:school,clickedEntityId:11601,idx:4-1-11,tarId:1484858838825,tas:externado%20"><img src="https://bdigital.uexternado.edu.co/image/icon-linkedin.svg" alt=""></a></li>
-                                    <li><a target="blank" href="https://instagram.com/uexternado/"><img src="https://bdigital.uexternado.edu.co/image/icon-instagram.svg" alt=""></a></li>
+                                    <li><a target="blank" href="https://www.youtube.com/channel/UCGVWtXf8V7_-mknqXecQzgQ"><img src="<%= request.getContextPath() %>image/icon-youtube.svg" alt=""></a></li>
+                                    <li><a target="blank" href="https://www.instagram.com/ucatocuenca/"><img src="<%= request.getContextPath() %>image/icon-instagram.svg" alt=""></a></li>
                                   </ul>
                                 </div>
                               </section>
