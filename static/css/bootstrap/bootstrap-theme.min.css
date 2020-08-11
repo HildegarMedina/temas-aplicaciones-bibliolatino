@@ -456,8 +456,12 @@ table {
     position: relative;
     top: -15px;
     width: 260px;
-    background: #820c0e;
+    background: #fff;
+    border: 1px solid #820c0e;
     padding: 15px 10px;
+    background-image: url("http://aplicaciones.bibliolatino.com/image/header-illustration-custom.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .logo-menu img {
     width: 100%;
@@ -603,6 +607,14 @@ main#content::before {
     display: flex;
     flex-direction: column;
     color: #000;
+}
+#linksBar h3 {
+    font-weight: lighter;
+    font-size: 17px;
+    margin: 0;
+    text-align: center;
+    padding: 0 10px;
+    display: block;
 }
 #linksBar ul li img {
     width: 160px;
@@ -792,8 +804,8 @@ main#content::before {
         margin: 0;
     }
     .header-middle .navbar-collapse.bs-navbar-collapse.in .logo-menu {
-        top: 0;
-        background: transparent;
+        top: 5px;
+        background: #fff;
         display: block;
         height: 85px;
         left: 0;
