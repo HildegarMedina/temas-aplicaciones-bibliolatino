@@ -156,6 +156,8 @@ if (submissions != null && submissions.count() > 0)
 	%>
 			</h3>
 		<div class="panel panel-custom">        
+
+			
 		<div id="recent-submissions-carousel" class="panel-heading carousel slide">
 			
 			<!-- Wrapper for slides -->

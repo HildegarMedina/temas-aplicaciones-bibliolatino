@@ -169,7 +169,14 @@ alt="web counter"></a></div></noscript>
 <!-- End of Statcounter Code -->
 <a href="https://statcounter.com/p11967482/?guest=1">Nos
 visitan</a>
-	</center>
+  </center>
+  
+  <script>
+    $('#recent-submissions-carousel').carousel({
+      interval: 6000,
+      cycle: true
+    }); 
+  </script>
 	<!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c88fac9554b47c0"></script> 
     </body>
 </html>
