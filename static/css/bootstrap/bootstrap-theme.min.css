@@ -649,8 +649,13 @@ footer.navbar-inverse {
         margin: 0;
         padding: 10px 0 5px 0px;
     }
-    #linksBar {
-        display: none;
+    #linksBar ul {
+        flex-wrap: wrap;
+    }
+    #linksBar ul li {
+        flex: 50%;
+        text-align: center;
+        margin-bottom: 10px;
     }
     .carousel-inner > .item > img, .carousel-inner > .item > a > img {
         max-height: 200px;
@@ -688,5 +693,9 @@ footer.navbar-inverse {
     }
     #google_translate_element {
         padding-left: 10px;
+    }
+    .card-group-custom .list-group-item img {
+        margin: auto;
+        max-height: 80px;
     }
 }
