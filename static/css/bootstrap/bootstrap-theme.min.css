@@ -686,11 +686,11 @@ main#content::before {
 /*------Footer------*/
 .footerExternadoBottomColumns {
     display: flex;
-    color: #d1d1d1;
+    color: #1d1d1d;
     flex-wrap: wrap;
 }
 .footerExternadoBottomColumns a {
-    color: #d1d1d1;
+    color: #1d1d1d;
 }
 .footerExternadoBottomColumns > div {
     flex: 1;
@@ -710,7 +710,7 @@ main#content::before {
 .footerExternadoBottomColumns h4 {
     font-weight: bold;
     font-size: 22px;
-    color: #fff;
+    color: #000;
     text-transform: uppercase;
 }
 .navbar.navbar-inverse.navbar-bottom {
@@ -722,7 +722,7 @@ main#content::before {
 }
 .navbar.navbar-inverse.navbar-bottom:before {
     content: "";
-    background: rgba(0, 0, 0, 0.85);
+    background: rgba(255, 255, 255, 0.85);
     position: absolute;
     top: 0;
     left: 0;
