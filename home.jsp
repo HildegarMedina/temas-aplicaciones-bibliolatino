@@ -220,6 +220,6 @@ if (communities != null && communities.size() != 0)
 <div class="row">
 	<%@ include file="discovery/static-tagcloud-facet.jsp" %>
 </div>
-	
+	 
 </div>
 </dspace:layout>
