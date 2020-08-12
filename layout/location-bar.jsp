@@ -27,7 +27,7 @@
 <%@ page import="java.util.List" %>
 <div style="text-align: center;"><a href="<%= request.getContextPath() %>"><img style="border: 0px solid ; width: 100%; height: 140px;" alt="repositorio digital tecnologico argos" src="<%= request.getContextPath() %>image/banner.png"></a>
 </div>
-<div style="text-align: center; margin-top: 20px;"><a href="https://www.tecnologicoargos.edu.ec/" target="_blank"><big><big><span style="font-weight: bold;">Página Principal</span></big></big></a> | <a href="https://biblioteca.tecnologicoargos.edu.ec:8081/" target="_blank"><big><big><span style="font-weight: bold;">Catálogo Bibliográfico</span></big></big></a>
+<div style="text-align: center; margin-top: 20px;"><a href="https://www.tecnologicoargos.edu.ec/" target="_blank"><big><big><span style="font-weight: bold;">Página Principal</span></big></big></a> | <a href="https://biblioteca.tecnologicoargos.edu.ec:8081/" target="_blank"><big><big><span style="font-weight: bold;">Catálogo Bibliográfico</span></big></big></a> | <a href="<%= request.getContextPath() %>/statistics"><big><big><span style="font-weight: bold;">Estadísticas</span></big></big></a>
 </div>
 <ol class="breadcrumb btn-success">
 <%

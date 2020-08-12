@@ -458,6 +458,65 @@ a:hover {
     width: 160px;
     margin: auto;
   }
+  /*-------FOOTER-------*/
+.footer .top {
+    display: block;
+    width: 100%;
+    background: #252525;
+    color: #d1d1d1;
+}
+.footer .flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer .flex a {
+    color: #fff;
+    text-decoration: none;
+    transition: all ease 300ms;
+    font-weight: bold;
+}
+.footer .flex a:hover {
+    color: #782693;
+}
+.footer .flex > div {
+    flex: 1;
+    padding: 20px 15px;
+}
+.footer .bottom > div {
+    padding: 10px 35px;
+    color: #d1d1d1;
+}
+.footer h4 { 
+    color: #fff;
+    font-size: 17px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.footer ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+  	margin-left: 0;
+}
+.footer .logo {
+    text-align: center;
+}
+.footer .logo img { 
+    width: 150px;
+}
+.footer p {
+    margin-bottom: 0;
+}
+.footer .bottom {
+    background: #1d1d1d;
+}
+.footer .bottom .flex {
+    align-items: center;
+    padding: 5px 20px;
+}
+.footer .bottom .flex > div {
+    padding: 5px 10px;
+}
   @media(max-width: 768px) {
     #linksBar {
         padding-top: 20px;
