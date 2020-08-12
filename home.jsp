@@ -78,7 +78,6 @@
 <div class="container">
 <%-- Search Box --%>
 <form method="get" action="<%= request.getContextPath() %>/simple-search" class="navbar-form navbar-right">
-	<h2>Biblioteca Digital</h2>
 	<div class="form-group">
 		<input type="text" class="form-control" placeholder="<fmt:message key="jsp.layout.navbar-default.search"/>" name="query" id="tequery" size="25"/>
 	</div>
@@ -134,6 +133,94 @@
 		  </div>
 		</div>
 </div>
+<div class="row">
+	<div class="container">
+	<%
+	if (submissions != null && submissions.count() > 0)
+	{
+	%>
+			<div class="col-md-12">
+			<div class="panel panel-primary">        
+			<div id="recent-submissions-carousel" class="panel-heading carousel slide">
+			  <h3><fmt:message key="jsp.collection-home.recentsub"/>
+				  <%
+		if(feedEnabled)
+		{
+				String[] fmts = feedData.substring(feedData.indexOf(':')+1).split(",");
+				String icon = null;
+				int width = 0;
+				for (int j = 0; j < fmts.length; j++)
+				{
+					if ("rss_1.0".equals(fmts[j]))
+					{
+					   icon = "rss1.gif";
+					   width = 80;
+					}
+					else if ("rss_2.0".equals(fmts[j]))
+					{
+					   icon = "rss2.gif";
+					   width = 80;
+					}
+					else
+					{
+					   icon = "rss.gif";
+					   width = 36;
+					}
+		%>
+			<a href="<%= request.getContextPath() %>/feed/<%= fmts[j] %>/site"><img src="<%= request.getContextPath() %>/image/<%= icon %>" alt="RSS Feed" width="<%= width %>" height="15" style="margin: 3px 0 3px" /></a>
+		<%
+				}
+			}
+		%>
+			  </h3>
+			  
+			  <!-- Wrapper for slides -->
+			  <div class="carousel-inner">
+				<%
+				boolean first = true;
+				for (Item item : submissions.getRecentSubmissions())
+				{
+					String displayTitle = itemService.getMetadataFirstValue(item, "dc", "title", null, Item.ANY);
+					if (displayTitle == null)
+					{
+						displayTitle = "Untitled";
+					}
+					String displayAbstract = itemService.getMetadataFirstValue(item, "dc", "description", "abstract", Item.ANY);
+					if (displayAbstract == null)
+					{
+						displayAbstract = "";
+					}
+			%>
+				<div style="padding-bottom: 50px; min-height: 200px;" class="item <%= first?"active":""%>">
+				  <div style="padding-left: 80px; padding-right: 80px; display: inline-block;"><%= Utils.addEntities(StringUtils.abbreviate(displayTitle, 400)) %> 
+					  <a href="<%= request.getContextPath() %>/handle/<%=item.getHandle() %>" class="btn btn-success">See</a>
+							<p><%= Utils.addEntities(StringUtils.abbreviate(displayAbstract, 500)) %></p>
+				  </div>
+				</div>
+			<%
+					first = false;
+				 }
+			%>
+			  </div>
+	
+			  <!-- Controls -->
+			  <a class="left carousel-control" href="#recent-submissions-carousel" data-slide="prev">
+				<span class="icon-prev"></span>
+			  </a>
+			  <a class="right carousel-control" href="#recent-submissions-carousel" data-slide="next">
+				<span class="icon-next"></span>
+			  </a>
+	
+			  <ol class="carousel-indicators">
+				<li data-target="#recent-submissions-carousel" data-slide-to="0" class="active"></li>
+				<% for (int i = 1; i < submissions.count(); i++){ %>
+				<li data-target="#recent-submissions-carousel" data-slide-to="<%= i %>"></li>
+				<% } %>
+			  </ol>
+		 </div></div></div>	</div></div>
+	<%
+	}
+	%>
 </div>
 	<div class="container">
 		<div class="container row communities-content">
@@ -192,94 +279,6 @@
 	<div class="row">
 		<%@ include file="discovery/static-tagcloud-facet.jsp" %>
 	</div>
-		 
-<div class="row">
-<%
-if (submissions != null && submissions.count() > 0)
-{
-%>
-        <div class="col-md-12">
-        <div class="panel panel-primary">        
-        <div id="recent-submissions-carousel" class="panel-heading carousel slide">
-          <h3><fmt:message key="jsp.collection-home.recentsub"/>
-              <%
-    if(feedEnabled)
-    {
-	    	String[] fmts = feedData.substring(feedData.indexOf(':')+1).split(",");
-	    	String icon = null;
-	    	int width = 0;
-	    	for (int j = 0; j < fmts.length; j++)
-	    	{
-	    		if ("rss_1.0".equals(fmts[j]))
-	    		{
-	    		   icon = "rss1.gif";
-	    		   width = 80;
-	    		}
-	    		else if ("rss_2.0".equals(fmts[j]))
-	    		{
-	    		   icon = "rss2.gif";
-	    		   width = 80;
-	    		}
-	    		else
-	    	    {
-	    	       icon = "rss.gif";
-	    	       width = 36;
-	    	    }
-	%>
-	    <a href="<%= request.getContextPath() %>/feed/<%= fmts[j] %>/site"><img src="<%= request.getContextPath() %>/image/<%= icon %>" alt="RSS Feed" width="<%= width %>" height="15" style="margin: 3px 0 3px" /></a>
-	<%
-	    	}
-	    }
-	%>
-          </h3>
-          
-		  <!-- Wrapper for slides -->
-		  <div class="carousel-inner">
-		    <%
-		    boolean first = true;
-		    for (Item item : submissions.getRecentSubmissions())
-		    {
-		        String displayTitle = itemService.getMetadataFirstValue(item, "dc", "title", null, Item.ANY);
-		        if (displayTitle == null)
-		        {
-		        	displayTitle = "Untitled";
-		        }
-		        String displayAbstract = itemService.getMetadataFirstValue(item, "dc", "description", "abstract", Item.ANY);
-		        if (displayAbstract == null)
-		        {
-		            displayAbstract = "";
-		        }
-		%>
-		    <div style="padding-bottom: 50px; min-height: 200px;" class="item <%= first?"active":""%>">
-		      <div style="padding-left: 80px; padding-right: 80px; display: inline-block;"><%= Utils.addEntities(StringUtils.abbreviate(displayTitle, 400)) %> 
-		      	<a href="<%= request.getContextPath() %>/handle/<%=item.getHandle() %>" class="btn btn-success">See</a>
-                        <p><%= Utils.addEntities(StringUtils.abbreviate(displayAbstract, 500)) %></p>
-		      </div>
-		    </div>
-		<%
-				first = false;
-		     }
-		%>
-		  </div>
-
-		  <!-- Controls -->
-		  <a class="left carousel-control" href="#recent-submissions-carousel" data-slide="prev">
-		    <span class="icon-prev"></span>
-		  </a>
-		  <a class="right carousel-control" href="#recent-submissions-carousel" data-slide="next">
-		    <span class="icon-next"></span>
-		  </a>
-
-          <ol class="carousel-indicators">
-		    <li data-target="#recent-submissions-carousel" data-slide-to="0" class="active"></li>
-		    <% for (int i = 1; i < submissions.count(); i++){ %>
-		    <li data-target="#recent-submissions-carousel" data-slide-to="<%= i %>"></li>
-		    <% } %>
-	      </ol>
-     </div></div></div>	</div>
-<%
-}
-%>
 
 </div>
 </dspace:layout>

@@ -447,6 +447,11 @@ body.undernavigation {
 .header-top img {
     width: 25px;
 }
+.header-meddium h2 {
+    margin: 10px 0 0 0;
+    font-weight: bold;
+    font-size: 24px;
+}
 .header-meddium img {
     height: 60px;
     margin-bottom: 0;
