@@ -164,6 +164,42 @@ if (submissions != null && submissions.count() > 0)
 
 </div>
 <div class="container row">
+	<div id="linksBar">
+		<div class="container">
+		 <ul>
+			<li>
+				<a href="/community-list" target="_self">
+					<img src="<%= request.getContextPath() %>/image/icono-colecciones.png" alt="">
+					<h3>Navegar <br>por colecciones</h3>
+				</a>
+			</li>
+			<li>
+				<a href="/browse?type=author" target="_self">
+					<img src="<%= request.getContextPath() %>/image/icono-autores.png" alt="">
+					<h3>Navegar <br>por autores</h3>
+				</a>
+			</li>
+			<li>
+				<a href="/browse?type=title" target="_self">
+					<img src="<%= request.getContextPath() %>/image/icono-titulos.png" alt="">
+					<h3>Navegar <br>por títulos</h3>
+				</a>
+			</li>
+			<li>
+				<a href="/browse?type=dateissued" target="_self">
+					<img src="<%= request.getContextPath() %>/image/icono-fechas.png" alt="">
+					<h3>Navegar <br>por fechas</h3>
+				</a>
+			</li>
+			<li>
+				<a href="/browse?type=subject" target="_self">
+					<img src="<%= request.getContextPath() %>/image/icono-materias.png" alt="">
+					<h3>Navegar <br>por materias</h3>
+				</a>
+			</li>
+		 </ul>
+		 </div>
+	  </div>
 <%
 if (communities != null && communities.size() != 0)
 {
