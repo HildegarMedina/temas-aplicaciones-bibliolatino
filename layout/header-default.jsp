@@ -120,9 +120,15 @@
     </div>
     <div class="header-meddium">
         <div class="container">
-            <a href="<%= request.getContextPath() %>/"><img src="<%= request.getContextPath() %>/image/logo-argos-2020.png" alt="Logo"></a>
-            <h2>Repositorio Digital</h2>
-            <p>Educación Técnica Superior en Guayaquil</p>
+            <div class="flex-header">
+                <div>
+                    <a href="<%= request.getContextPath() %>/"><img src="<%= request.getContextPath() %>/image/logo-argos-2020.png" alt="Logo"></a>
+                    <p>Educación Técnica Superior en Guayaquil</p>
+                </div>
+                <div>
+                    <h2>Repositorio Digital</h2>
+                </div>
+            </div>
         </div>
     </div>
     <%
