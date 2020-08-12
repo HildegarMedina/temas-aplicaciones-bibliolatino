@@ -118,7 +118,57 @@
 
             </ul>
           </li>
+
+          <li class="dropdown">
+            <%
+       if (user != null)
+       {
+       %>
+       <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> <fmt:message key="jsp.layout.navbar-default.loggedin">
+             <fmt:param><%= StringUtils.abbreviate(navbarEmail, 20) %></fmt:param>
+         </fmt:message> <b class="caret"></b></a>
+       <%
+       } else {
+       %>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> <fmt:message key="jsp.layout.navbar-default.sign"/> <b class="caret"></b></a>
+     <% } %>             
+                <ul class="dropdown-menu">
+                  <li><a href="<%= request.getContextPath() %>/mydspace"><fmt:message key="jsp.layout.navbar-default.users"/></a></li>
+                  <li><a href="<%= request.getContextPath() %>/subscribe"><fmt:message key="jsp.layout.navbar-default.receive"/></a></li>
+                  <li><a href="<%= request.getContextPath() %>/profile"><fmt:message key="jsp.layout.navbar-default.edit"/></a></li>
+   
+       <%
+                   if (isAdmin || isCommunityAdmin || isCollectionAdmin) {
+                   %>
+            <li class="divider"></li>
+                              <% if (isAdmin) {%>
+                       
+                                   <li><a href="<%= request.getContextPath()%>/dspace-admin">
+                              <% } else if (isCommunityAdmin || isCollectionAdmin) {%>
+                           
+                                   <li><a href="<%= request.getContextPath()%>/tools">
+                   <% } %>
+                   <fmt:message key="jsp.administer"/></a></li>
+                   <%
+                       }
+         if (user != null) {
+       %>
+       <li><a href="<%= request.getContextPath() %>/logout"><span class="glyphicon glyphicon-log-out"></span> <fmt:message key="jsp.layout.navbar-default.logout"/></a></li>
+       <% } %>
+                </ul>
+              </li>
+
+          <li>
+            <a href="https://www.tecnologicoargos.edu.ec/" target="_blank">Tecnológico Argos</a>
+          </li>
+          <li>
+            <a href="https://biblioteca.tecnologicoargos.edu.ec:8081/" target="_blank">Catálogo Bibliográfico</a>
+          </li>
+          <li>
+            <a href="<%= request.getContextPath() %>/statistics">Estadísticas</a>
+          </li>
           <li class="<%= ( currentPage.endsWith( "/help" ) ? "active" : "" ) %>"><dspace:popup page="<%= LocaleSupport.getLocalizedMessage(pageContext, \"help.index\") %>"><fmt:message key="jsp.layout.navbar-default.help"/></dspace:popup></li>
+        </li>
        </ul>
 
  <% if (supportedLocales != null && supportedLocales.length > 1)
@@ -143,7 +193,7 @@
      }
  %>
      </ul>
-    </li>
+
     </ul>
   </div>
  <%
@@ -152,44 +202,7 @@
  
        <div class="nav navbar-nav navbar-right">
 		<ul class="nav navbar-nav navbar-right">
-         <li class="dropdown">
-         <%
-    if (user != null)
-    {
-		%>
-		<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> <fmt:message key="jsp.layout.navbar-default.loggedin">
-		      <fmt:param><%= StringUtils.abbreviate(navbarEmail, 20) %></fmt:param>
-		  </fmt:message> <b class="caret"></b></a>
-		<%
-    } else {
-		%>
-             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> <fmt:message key="jsp.layout.navbar-default.sign"/> <b class="caret"></b></a>
-	<% } %>             
-             <ul class="dropdown-menu">
-               <li><a href="<%= request.getContextPath() %>/mydspace"><fmt:message key="jsp.layout.navbar-default.users"/></a></li>
-               <li><a href="<%= request.getContextPath() %>/subscribe"><fmt:message key="jsp.layout.navbar-default.receive"/></a></li>
-               <li><a href="<%= request.getContextPath() %>/profile"><fmt:message key="jsp.layout.navbar-default.edit"/></a></li>
-
-		<%
-                if (isAdmin || isCommunityAdmin || isCollectionAdmin) {
-                %>
-			   <li class="divider"></li>
-                           <% if (isAdmin) {%>
-                    
-                                <li><a href="<%= request.getContextPath()%>/dspace-admin">
-                           <% } else if (isCommunityAdmin || isCollectionAdmin) {%>
-                        
-                                <li><a href="<%= request.getContextPath()%>/tools">
-                <% } %>
-                <fmt:message key="jsp.administer"/></a></li>
-                <%
-                    }
-		  if (user != null) {
-		%>
-		<li><a href="<%= request.getContextPath() %>/logout"><span class="glyphicon glyphicon-log-out"></span> <fmt:message key="jsp.layout.navbar-default.logout"/></a></li>
-		<% } %>
-             </ul>
-           </li>
+         
           </ul>
           
 	</div>
