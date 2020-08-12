@@ -107,7 +107,21 @@
     <%-- HACK: marginwidth, marginheight: for non-CSS compliant Netscape browser --%>
     <body class="undernavigation">
 <a class="sr-only" href="#content">Skip navigation</a>
-<header class="navbar navbar-inverse navbar-fixed-top">    
+<header class="navbar navbar-inverse">    
+    <div class="header-top">
+        <div class="container">
+            <a target="_blank" href="https://www.facebook.com/tecnologicoargos/"><img src="<%= request.getContextPath() %>/image/icon-facebook-header.svg" alt=""></a>
+            <!-- <a target="_blank" href="https://www.pinterest.com/artesaniasdcol/"><img src="<%= request.getContextPath() %>/image/icon-pinterest-header.svg" alt=""></a> -->
+            <a target="_blank" href="https://www.instagram.com/tecno_argos/"><img src="<%= request.getContextPath() %>/image/icon-instagram-header.svg" alt=""></a>
+            <a target="_blank" href="https://twitter.com/tecno_argos"><img src="<%= request.getContextPath() %>/image/icon-twitter-header.svg" alt=""></a>
+            <!-- <a target="_blank" href="https://www.youtube.com/artesaniasdecolombia"><img src="<%= request.getContextPath() %>/image/icon-youtube-header.svg" alt=""></a> -->
+        </div>
+    </div>
+    <div class="header-meddium">
+        <div class="container">
+            <a href="<%= request.getContextPath() %>/"><img src="<%= request.getContextPath() %>/image/logo-argos-2020.png" alt="Logo"></a>
+        </div>
+    </div>
     <%
     if (!navbar.equals("off"))
     {
