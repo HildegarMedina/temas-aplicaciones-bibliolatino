@@ -571,7 +571,7 @@ table {
 }
 main#content {
     position: relative;
-    background-image: url("http://aplicaciones.bibliolatino.com/image/home-bg-21.jpg");
+    background-image: url("../../../image/home-bg-21.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -714,7 +714,7 @@ main#content::before {
     text-transform: uppercase;
 }
 .navbar.navbar-inverse.navbar-bottom {
-    background-image: url("http://aplicaciones.bibliolatino.com/image/home-bg-21.jpg");
+    background-image: url("../../../image/home-bg-21.jpg");
     background-size: cover;
     background-position: center;
     padding: 40px;

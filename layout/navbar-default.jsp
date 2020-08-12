@@ -201,7 +201,7 @@
               </ul>
             </li>
             <li>
-              <a href="http://aplicaciones.bibliolatino.com/statistics">Estadísticas</a>
+              <a href="<%= request.getContextPath() %>/statistics">Estadísticas</a>
             </li>
             <li>
               <a href="https://biblioteca.ucacue.edu.ec/">Red de Bibliotecas </a>
