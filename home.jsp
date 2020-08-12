@@ -72,14 +72,17 @@
 %>
 
 <dspace:layout locbar="nolink" titlekey="jsp.home.title" feedData="<%= feedData %>">
+</div>
+<div class="home-page">
 
+<div class="container">
 <%-- Search Box --%>
 <form method="get" action="<%= request.getContextPath() %>/simple-search" class="navbar-form navbar-right">
 	<h2>Biblioteca Digital</h2>
 	<div class="form-group">
 		<input type="text" class="form-control" placeholder="<fmt:message key="jsp.layout.navbar-default.search"/>" name="query" id="tequery" size="25"/>
 	</div>
-	<button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span></button>
+	<button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span> Buscar</button>
 <%--               <br/><a href="<%= request.getContextPath() %>/advanced-search"><fmt:message key="jsp.layout.navbar-default.advanced"/></a>
 <%
 		if (ConfigurationManager.getBooleanProperty("webui.controlledvocabulary.enable"))
@@ -90,7 +93,6 @@
 		}
 %> --%>
 </form>
-
 </div>
 <div class="container">
 	<div class="container row">
@@ -99,37 +101,42 @@
 			 <ul>
 				<li>
 					<a href="/community-list" target="_self">
-						<img src="<%= request.getContextPath() %>/image/icono-colecciones.png" alt="">
+						<i class="fas fa-boxes"></i>
 						<h3>Navegar <br>por colecciones</h3>
 					</a>
 				</li>
 				<li>
 					<a href="/browse?type=author" target="_self">
-						<img src="<%= request.getContextPath() %>/image/icono-autores.png" alt="">
+						<i class="fas fa-users"></i>
 						<h3>Navegar <br>por autores</h3>
 					</a>
 				</li>
 				<li>
 					<a href="/browse?type=title" target="_self">
-						<img src="<%= request.getContextPath() %>/image/icono-titulos.png" alt="">
+						<i class="fas fa-file-alt"></i>
 						<h3>Navegar <br>por títulos</h3>
 					</a>
 				</li>
 				<li>
 					<a href="/browse?type=dateissued" target="_self">
-						<img src="<%= request.getContextPath() %>/image/icono-fechas.png" alt="">
+						<i class="far fa-calendar-alt"></i>
 						<h3>Navegar <br>por fechas</h3>
 					</a>
 				</li>
 				<li>
 					<a href="/browse?type=subject" target="_self">
-						<img src="<%= request.getContextPath() %>/image/icono-materias.png" alt="">
+						<i class="fas fa-swatchbook"></i>
 						<h3>Navegar <br>por materias</h3>
 					</a>
 				</li>
 			 </ul>
 			 </div>
 		  </div>
+		</div>
+</div>
+</div>
+	<div class="container">
+		<div class="container row communities-content">
 	<%
 	if (communities != null && communities.size() != 0)
 	{

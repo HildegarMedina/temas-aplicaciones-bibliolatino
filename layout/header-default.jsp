@@ -54,6 +54,7 @@
         <link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/bootstrap/bootstrap.min.css" type="text/css" />
         <link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/bootstrap/bootstrap-theme.min.css" type="text/css" />
         <link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/bootstrap/dspace-theme.css" type="text/css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 <%
     if (!"NONE".equals(feedRef))
     {
@@ -120,6 +121,7 @@
     <div class="header-meddium">
         <div class="container">
             <a href="<%= request.getContextPath() %>/"><img src="<%= request.getContextPath() %>/image/logo-argos-2020.png" alt="Logo"></a>
+            <p>Educación Técnica Superior en Guayaquil</p>
         </div>
     </div>
     <%
@@ -149,7 +151,6 @@ function googleTranslateElementInit() {
 }
 </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </div> -->
-<br />
 
 
                 <%-- Location bar --%>
