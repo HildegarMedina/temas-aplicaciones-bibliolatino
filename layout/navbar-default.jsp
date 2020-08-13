@@ -126,49 +126,39 @@
              </ul>
            </li>
            <li class="<%= ( currentPage.endsWith( "/help" ) ? "active" : "" ) %>"><dspace:popup page="<%= LocaleSupport.getLocalizedMessage(pageContext, \"help.index\") %>"><fmt:message key="jsp.layout.navbar-default.help"/></dspace:popup></li>
-           <li>
 
-           </li>
-        </ul>
- 
+            
   <% if (supportedLocales != null && supportedLocales.length > 1)
-      {
-  %>
-     <div class="nav navbar-nav navbar-right">
-    <ul class="nav navbar-nav navbar-right">
-       <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><fmt:message key="jsp.layout.navbar-default.language"/><b class="caret"></b></a>
-         <ul class="dropdown-menu">
-  <%
-     for (int i = supportedLocales.length-1; i >= 0; i--)
-      {
-  %>
-       <li>
-         <a onclick="javascript:document.repost.locale.value='<%=supportedLocales[i].toString()%>';
-                   document.repost.submit();" href="<%= currentPage %>?locale=<%=supportedLocales[i].toString()%>">
-          <%= supportedLocales[i].getDisplayLanguage(supportedLocales[i])%>
-        </a>
-       </li>
-  <%
-      }
-  %>
-      </ul>
-     </li>
-     </ul>
-   </div>
-  <%
-    }
-  %>
-  
-        <div class="nav navbar-nav navbar-right">
-     <ul class="nav navbar-nav navbar-right">
-          <li class="dropdown">
+  {
+%>
+   <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><fmt:message key="jsp.layout.navbar-default.language"/><b class="caret"></b></a>
+     <ul class="dropdown-menu">
+<%
+ for (int i = supportedLocales.length-1; i >= 0; i--)
+  {
+%>
+   <li>
+     <a onclick="javascript:document.repost.locale.value='<%=supportedLocales[i].toString()%>';
+               document.repost.submit();" href="<%= currentPage %>?locale=<%=supportedLocales[i].toString()%>">
+      <%= supportedLocales[i].getDisplayLanguage(supportedLocales[i])%>
+    </a>
+   </li>
+<%
+  }
+%>
+  </ul>
+ </li>
+<%
+}
+%>
+<li class="dropdown">
           <%
      if (user != null)
      {
      %>
      <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> <fmt:message key="jsp.layout.navbar-default.loggedin">
-           <fmt:param><%= StringUtils.abbreviate(navbarEmail, 20) %></fmt:param>
+           <fmt:param><%= navbarEmail %></fmt:param>
        </fmt:message> <b class="caret"></b></a>
      <%
      } else {
@@ -206,9 +196,9 @@
             <li>
               <a href="https://biblioteca.ucacue.edu.ec/">Red de Bibliotecas </a>
             </li>
-           </ul>
-           
-   </div>
+        </ul>
+  
+
    </nav>
       </div>
     </div>

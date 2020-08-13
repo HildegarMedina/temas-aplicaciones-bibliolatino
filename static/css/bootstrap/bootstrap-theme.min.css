@@ -454,8 +454,8 @@ table {
 }
 .logo-menu {
     position: relative;
-    top: -15px;
-    width: 260px;
+    top: -10px;
+    width: 220px;
     background: #fff;
     border: 1px solid #820c0e;
     padding: 15px 10px;
@@ -472,12 +472,12 @@ table {
 .navbar-inverse .navbar-nav > li > a {
     color: #fff;
     background: transparent;
-    font-size: 14px;
+    font-size: 13px;
     text-transform: uppercase;
     font-weight: bold;
     display: flex;
     height: 60px;
-    padding: 22px;
+    padding: 23px 15px;
 }
 .navbar-inverse .navbar-nav > li > a:hover, 
 .navbar-inverse .navbar-nav > .open > a, 
