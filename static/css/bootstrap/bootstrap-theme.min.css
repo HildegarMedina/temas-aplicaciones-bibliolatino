@@ -682,6 +682,12 @@ main#content::before {
     background: #af1c32;
     border-color: #af1c32;
 }
+.undernavigation {
+    padding-top: 0 !important;
+}
+.undernavigation main {
+    padding-top: 30px !important;
+}
 
 /*------Footer------*/
 .footerExternadoBottomColumns {

@@ -157,9 +157,14 @@
      if (user != null)
      {
      %>
-     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> <fmt:message key="jsp.layout.navbar-default.loggedin">
-           <fmt:param><%= navbarEmail %></fmt:param>
-       </fmt:message> <b class="caret"></b></a>
+     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+       <span class="glyphicon glyphicon-user"></span> 
+       <span id="text-user">
+         <fmt:message key="jsp.layout.navbar-default.loggedin">
+            <fmt:param><%= navbarEmail %></fmt:param>
+         </fmt:message></span>
+          <b class="caret"></b></a>
+       
      <%
      } else {
      %>
@@ -204,3 +209,11 @@
     </div>
 
 </div>
+
+<script>
+  var elementNav = document.getElementById("text-user");
+  var valueNav = elementNav.innerHTML;
+  var valueNew = valueNav.replace("Registrado como ", "");
+  valueNew = valueNew.replace(" ", "");
+  elementNav.innerHTML = valueNew;
+</script>
