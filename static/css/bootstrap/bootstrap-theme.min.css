@@ -725,6 +725,7 @@ main#content::before {
     background-position: center;
     padding: 40px;
     position: relative;
+    z-index: 1;
 }
 .navbar.navbar-inverse.navbar-bottom:before {
     content: "";
