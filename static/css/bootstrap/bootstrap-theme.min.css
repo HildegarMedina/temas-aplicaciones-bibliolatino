@@ -657,6 +657,16 @@ body.undernavigation {
     .home-page {
         padding: 0;
     }
+    .header-top .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .header-top .container div {
+        flex: 1;
+    }
+    .header-top .container div:nth-child(1) {
+        text-align: left;
+    }
     #linksBar ul li {
         flex: 1 1 100%;
         margin: 10px;
