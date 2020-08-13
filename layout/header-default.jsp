@@ -112,18 +112,18 @@
     <div class="header-top">
         <div class="container">
             <div>
-                <div id="google_translate_element"></div><script type="text/javascript">
-                function googleTranslateElementInit() {
-                    new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'en,es,pt,fr,it,zh-TW,ja,de,ru,ar,ca,el,eu,gn,ko,qu,th,uk,vi', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
-                }
-                </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-            </div>
-            <div>
                 <a target="_blank" href="https://www.facebook.com/tecnologicoargos/"><img src="<%= request.getContextPath() %>/image/icon-facebook-header.svg" alt=""></a>
                 <!-- <a target="_blank" href="https://www.pinterest.com/artesaniasdcol/"><img src="<%= request.getContextPath() %>/image/icon-pinterest-header.svg" alt=""></a> -->
                 <a target="_blank" href="https://www.instagram.com/tecno_argos/"><img src="<%= request.getContextPath() %>/image/icon-instagram-header.svg" alt=""></a>
                 <a target="_blank" href="https://twitter.com/tecno_argos"><img src="<%= request.getContextPath() %>/image/icon-twitter-header.svg" alt=""></a>
                 <!-- <a target="_blank" href="https://www.youtube.com/artesaniasdecolombia"><img src="<%= request.getContextPath() %>/image/icon-youtube-header.svg" alt=""></a> -->
+            </div>
+            <div>
+                <div id="google_translate_element"></div><script type="text/javascript">
+                function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'en,es,pt,fr,it,zh-TW,ja,de,ru,ar,ca,el,eu,gn,ko,qu,th,uk,vi', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+                }
+                </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
             </div>
         </div>
     </div>

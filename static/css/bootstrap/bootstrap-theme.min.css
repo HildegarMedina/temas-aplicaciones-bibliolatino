@@ -441,13 +441,10 @@ body.undernavigation {
 }
 .header-top .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
-.header-top .container div {
-    flex: 1;
-}
-.header-top .container div:nth-child(1) {
-    text-align: left;
+.header-top .container div:nth-child(2) {
+    margin-left: 15px;
 }
 .header-top a {
     display: inline-block;
@@ -497,6 +494,10 @@ body.undernavigation {
     background-color: #fff;
     box-shadow: none;
     padding-bottom: 10px;
+}
+.goog-te-gadget-icon {
+    border-radius: 50%;
+    width: 18px !important;
 }
 
 /*------CONTENT------*/
@@ -636,7 +637,7 @@ body.undernavigation {
 .footer .bottom .flex > div {
     padding: 5px 10px;
 }
-  @media(max-width: 768px) {
+@media(max-width: 768px) {
     .header-meddium h2 {
         font-size: 20px;
     }
