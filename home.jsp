@@ -142,6 +142,8 @@ CommunityService communityService = ContentServiceFactory.getInstance().getCommu
 
 </div>
 
+<style>.breadcrumb {display: none}</style>
+
 <div class="slider-container">
 	<div class="container">
 <%
@@ -214,6 +216,7 @@ if (submissions != null && submissions.count() > 0)
 				}
 		%>
 			</div>
+			
 
 			<!-- Controls -->
 			<a class="left carousel-control" href="#recent-submissions-carousel" data-slide="prev">
