@@ -439,6 +439,16 @@ body.undernavigation {
     text-align: right;
     padding: 7px 0;
 }
+.header-top .container {
+    display: flex;
+    justify-content: space-between;
+}
+.header-top .container div {
+    flex: 1;
+}
+.header-top .container div:nth-child(1) {
+    text-align: left;
+}
 .header-top a {
     display: inline-block;
     padding: 0px; 
