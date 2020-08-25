@@ -17,7 +17,7 @@
 	  </div>
 </div>
 
-<div class="col-md-12">
+<!-- <div class="col-md-12">
 	<div id="meddium-bar">
 		<div class="container">
 			<div class="col-md-6">
@@ -80,7 +80,7 @@
 			</div>
 		 </div>
 	  </div>
-</div>
+</div> -->
 <%--
 
     The contents of this file are subject to the license and copyright
@@ -161,7 +161,7 @@
 if (submissions != null && submissions.count() > 0)
 {
 %>
-		<div class="col-md-12">
+		<div class="col-md-8">
 		<div class="panel panel-primary">        
 		<div id="recent-submissions-carousel" class="panel-heading carousel slide">
 			<h3><fmt:message key="jsp.collection-home.recentsub"/>
@@ -240,6 +240,10 @@ if (submissions != null && submissions.count() > 0)
 			<% } %>
 			</ol>
 		</div></div></div> 
+
+		<div class="col-md-4">
+			<%= sideNews %>
+		</div>
 <%
 }
 %>
